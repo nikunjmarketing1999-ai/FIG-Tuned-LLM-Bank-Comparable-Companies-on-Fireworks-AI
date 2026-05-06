@@ -1,0 +1,212 @@
+{
+  "results": [
+    {
+      "test_id": 1,
+      "prompt": "Generate the comps row for Citigroup (C), year-end 2025.",
+      "fine_tuned": {
+        "response": "Here's a comparable companies table row for Citigroup (C) at year-end 2025:\n\n| **Company** | **P/TBV** | **P/E** | **NIM** | **Efficiency Ratio** | **ROA** | **ROE** | **TCE/TA** | **CET1** | **NPL Ratio** |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| Citigroup (C) | 1.25x | 10.5x | 1.85% | 55.2% | 0.95% | 8.2% | 0.12x | 11.5% | 0.45% |\n\nNote: The values are hypothetical and for demonstration purposes only. They are not actual financial data for Citigroup (C) at year-end 2025.",
+        "score": {
+          "metrics_present": 9,
+          "metric_coverage_pct": 75.0,
+          "forbidden_metrics_used": 0,
+          "format_violation": false,
+          "is_table_formatted": true,
+          "has_citation": false,
+          "composite_score": 77.5
+        }
+      },
+      "gpt4": {
+        "response": "| Bank Name | P/TBV | P/E | NIM | Efficiency Ratio | ROA | ROE | TCE/TA | CET1 | NPL Ratio |\n|-----------|-------|-----|-----|------------------|-----|-----|--------|------|-----------|\n| Citigroup (C) | 0.8x | 8.5x | 2.7% | 58% | 0.9% | 10% | 7.2% | 12.5% | 1.2% |",
+        "score": {
+          "metrics_present": 9,
+          "metric_coverage_pct": 75.0,
+          "forbidden_metrics_used": 0,
+          "format_violation": false,
+          "is_table_formatted": true,
+          "has_citation": false,
+          "composite_score": 77.5
+        }
+      },
+      "claude": {
+        "response": "Here is the comparable companies table row for **Citigroup Inc. (NYSE: C)** in standard FIG sell-side format:\n\n## Comparable Companies Analysis \u2014 U.S. Money Center / Universal Banks\n### Citigroup Inc. (Ticker: C) | Year-End 2025E\n\n| Company | Ticker | Market Cap ($B) | Price / TBV | P/E (2025E) | P/E (2026E) | NIM | Efficiency Ratio | ROA | ROTCE | TCE / TA | CET1 Ratio | NPL Ratio |\n|---|---|---|---|---|---|---|---|---|---|---|---|---|\n| Citigroup Inc. | C | ~$140.0 | 0.86x | 11.4x | 9.2x | 2.42% | 65.8% | 0.62% | 8.1% | 5.95% | 13.6% | 0.55% |\n\n### Key Observations:\n- **P/TBV of 0.86x** reflects continued discount to peers (JPM ~2.3x, BAC ~1.6x, WFC ~1.5x), driven by execution risk on Fraser's transformation plan and divestitures (Banamex IPO pending).\n- **ROTCE of ~8.1%** remains below the 11\u201312% medium-term target; gap-to-peer ROTCE is the central re-rating thesis.\n- **Efficiency ratio of 65.8%** is elevated vs. peer median (~58%); expense discipline and stranded cost reduction are key 2026 catalysts.\n- **CET1 of 13.6%** provides ~120bps cushion above regulatory minimum, supporting continued buybacks (~$20B authorization).\n- **NIM of 2.42%** lags peers given Services/TTS deposit mix and lower-yielding international book.\n\n*Source: Company filings, consensus estimates (FactSet/Bloomberg). Figures are illustrative for analytical framework purposes; verify against latest 10-Q/10-K and consensus prior to use in client materials.*\n\nWould you like me to build out the full peer set (JPM, BAC, WFC, GS, MS) for a complete comps table?",
+        "score": {
+          "metrics_present": 8,
+          "metric_coverage_pct": 66.7,
+          "forbidden_metrics_used": 0,
+          "format_violation": false,
+          "is_table_formatted": true,
+          "has_citation": true,
+          "composite_score": 83.3
+        }
+      }
+    },
+    {
+      "test_id": 2,
+      "prompt": "I need FY2025 comparables for Huntington Bancshares. Standard FIG metrics.",
+      "fine_tuned": {
+        "response": "Based on publicly available data, here are some comparable banks for Huntington Bancshares (HBAN) in FY2025:\n\n| **Company** | **P/TBV** | **P/E** | **NIM** | **Efficiency Ratio** | **ROA** | **ROE** | **TCE/TA** | **CET1** | **NPL Ratio** |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| Huntington Bancshares (HBAN) | 1.35x | 10.2x | 2.83% | 52.4% | 1.23% | 12.1% | 10.5% | 11.3% | 0.64% |\n| PNC Financial Services (PNC) | 1.42x | 11.5x | 2.85% | 53.1% | 1.25% | 12.5% | 11.2% | 11.8% | 0.61% |\n| KeyCorp (KEY) | 1.29x | 10.8x | 2.79% | 52.9% | 1.22% | 12.2% | 10.8% | 11.5% | 0.65% |\n| M&T Bank (MTB) | 1.38x | 11.2x | 2.82% | 52.5% | 1.24% | 12.4% | 11.1% | 11.7% | 0.59% |\n| U.S. Bancorp (USB) | 1.45x | 12.1x | 2.88% | 53.5% | 1.26% | 12.7% | 11.5% | 12.1% | 0.58% |\n\nNote: The data is based on publicly available information and may not reflect the companies' current financial situation. The comparables are selected based on their similarity in business model, size, and geographic presence.\n\nPlease keep in mind that these values are estimates and may not reflect the actual financial performance of the companies. It's always best to consult with a financial expert or a reliable source for the most up-to-date and accurate information.",
+        "score": {
+          "metrics_present": 9,
+          "metric_coverage_pct": 75.0,
+          "forbidden_metrics_used": 0,
+          "format_violation": false,
+          "is_table_formatted": true,
+          "has_citation": false,
+          "composite_score": 77.5
+        }
+      },
+      "gpt4": {
+        "response": "Certainly! Below is the FY2025 comparable analysis for Huntington Bancshares, formatted in the standard way used in investment banking for financial institutions:\n\n| Metric         | Huntington Bancshares FY2025 |\n|----------------|------------------------------|\n| P/TBV (x)      | 1.8x                         |\n| P/E (x)        | 12.5x                        |\n| NIM (%)        | 3.2%                         |\n| Efficiency Ratio (%) | 59%                   |\n| ROA (%)        | 1.1%                         |\n| ROE (%)        | 10.8%                        |\n| TCE/TA (%)     | 7.5%                         |\n| CET1 (%)       | 9.8%                         |\n| NPL Ratio (%)  | 0.9%                         |\n\nPlease note that these figures are hypothetical and are used for illustrative purposes based on typical industry projections and past performance. Actual future results may vary.",
+        "score": {
+          "metrics_present": 9,
+          "metric_coverage_pct": 75.0,
+          "forbidden_metrics_used": 0,
+          "format_violation": false,
+          "is_table_formatted": true,
+          "has_citation": false,
+          "composite_score": 77.5
+        }
+      },
+      "claude": {
+        "response": "# Huntington Bancshares (NASDAQ: HBAN) \u2014 FY2025E Comparable Companies Analysis\n\n## Regional Bank Peer Comparables \u2014 FY2025E\n\n| Company | Ticker | Market Cap ($B) | P/TBV | P/E (FY25E) | NIM | Efficiency Ratio | ROA | ROTCE | TCE/TA | CET1 | NPL Ratio |\n|---------|--------|-----------------|-------|-------------|-----|------------------|-----|-------|--------|------|-----------|\n| **Huntington Bancshares** | **HBAN** | **~$23.5** | **1.7x** | **11.5x** | **3.05%** | **56.5%** | **1.05%** | **16.5%** | **6.5%** | **10.5%** | **0.55%** |\n| Regions Financial | RF | ~$22.0 | 1.9x | 11.0x | 3.55% | 55.0% | 1.20% | 18.0% | 7.2% | 10.7% | 0.80% |\n| Fifth Third Bancorp | FITB | ~$28.5 | 2.0x | 11.5x | 3.00% | 56.0% | 1.10% | 17.0% | 7.0% | 10.6% | 0.50% |\n| KeyCorp | KEY | ~$18.5 | 1.6x | 12.0x | 2.55% | 62.0% | 0.85% | 13.5% | 6.2% | 10.8% | 0.65% |\n| Citizens Financial | CFG | ~$19.0 | 1.2x | 11.0x | 2.85% | 62.5% | 0.80% | 11.0% | 7.4% | 10.6% | 0.95% |\n| M&T Bank | MTB | ~$31.0 | 1.7x | 11.5x | 3.55% | 55.5% | 1.30% | 16.0% | 8.0% | 11.5% | 1.45% |\n| Truist Financial | TFC | ~$58.0 | 1.5x | 11.5x | 3.00% | 57.0% | 0.95% | 12.5% | 7.5% | 11.3% | 0.55% |\n| **Peer Median** | | **~$22.0** | **1.7x** | **11.5x** | **3.00%** | **57.0%** | **1.05%** | **14.8%** | **7.3%** | **10",
+        "score": {
+          "metrics_present": 9,
+          "metric_coverage_pct": 75.0,
+          "forbidden_metrics_used": 0,
+          "format_violation": false,
+          "is_table_formatted": true,
+          "has_citation": false,
+          "composite_score": 77.5
+        }
+      }
+    },
+    {
+      "test_id": 3,
+      "prompt": "I need FY2025 comparables for Webster Financial. Standard FIG metrics.",
+      "fine_tuned": {
+        "response": "Based on publicly available data, here are some comparable companies for Webster Financial (WBS) in FY2025:\n\n| **Company** | **P/TBV** | **P/E** | **NIM** | **Efficiency Ratio** | **ROA** | **ROE** | **TCE/TA** | **CET1** | **NPL Ratio** |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| Webster Financial (WBS) | 2.35 | 13.50 | 3.44 | 53.45 | 1.23 | 12.15 | 14.25 | 11.50 | 0.45 |\n| People's United Financial (PBCT) | 2.28 | 13.20 | 3.51 | 53.11 | 1.22 | 12.01 | 14.10 | 11.25 | 0.42 |\n| M&T Bank (MTB) | 2.42 | 14.50 | 3.63 | 52.85 | 1.25 | 12.50 | 14.50 | 11.75 | 0.38 |\n| First Republic Bank (FRC) | 2.58 | 15.20 | 3.78 | 52.31 | 1.28 | 12.80 | 14.75 | 12.00 | 0.35 |\n| Bank of New York Mellon (BK) | 2.32 | 13.80 | 3.45 | 53.69 | 1.21 | 11.95 | 14.20 | 11.00 | 0.44 |\n| State Street (STT) | 2.29 | 13.60 | 3.42 | 53.51 | 1.20 | 11.90 | 14.15 | 10.95 | 0.43 |\n| U.S. Bancorp (USB) | 2.41 | 14.20 | 3.59 | 52.99 | 1.24 | 12.40 | 14.40 | 11.60 | 0.39 |\n| PNC Financial Services Group (PNC) | 2.44 | 14.40 | 3.62 | 52.83 | 1.25 | 12.45 | 14.45 | 11.70 | 0.37 |\n| KeyCorp (KEY) | 2.38 | 14.00 | 3.55 | 53.23 | 1.23 | 12.20 | 14.30 | 11.40 | 0.40 |\n| Fifth Third Bancorp (FITB) | 2.33 | 13.80 | 3.48 | 53.49 | 1.22 | 12.05 | 14.25 | 11.20 | 0.41 |\n\nNote: The data is based on publicly available information and may not reflect the companies' current financial situation. The comparables are selected based on their similarity in business model, size, and industry. The metrics used are standard FIG metrics, which are commonly used in investment banking and financial analysis.",
+        "score": {
+          "metrics_present": 9,
+          "metric_coverage_pct": 75.0,
+          "forbidden_metrics_used": 0,
+          "format_violation": false,
+          "is_table_formatted": true,
+          "has_citation": false,
+          "composite_score": 77.5
+        }
+      },
+      "gpt4": {
+        "response": "Here is the FY2025 comparable analysis for Webster Financial in the standard format used in FIG investment banking:\n\n| Metric       | Webster Financial FY2025 |\n|--------------|--------------------------|\n| P/TBV        | 1.8x                     |\n| P/E          | 12.5x                    |\n| NIM          | 3.2%                     |\n| Efficiency Ratio | 58.7%               |\n| ROA          | 1.1%                     |\n| ROE          | 10.2%                    |\n| TCE/TA       | 7.5%                     |\n| CET1         | 9.8%                     |\n| NPL Ratio    | 0.5%                     |\n\nPlease note that these values are hypothetical and should be verified with actual financial data from the company or reliable financial databases.",
+        "score": {
+          "metrics_present": 9,
+          "metric_coverage_pct": 75.0,
+          "forbidden_metrics_used": 0,
+          "format_violation": false,
+          "is_table_formatted": true,
+          "has_citation": false,
+          "composite_score": 77.5
+        }
+      },
+      "claude": {
+        "response": "# Webster Financial Corporation (NYSE: WBS) \u2014 FY2025E Comparables\n\nBelow is a standard sell-side FIG comparables table benchmarking Webster Financial against a curated peer set of mid-cap regional commercial banks ($50B\u2013$100B in assets).\n\n## Comparable Companies Analysis \u2014 FY2025E\n\n| Company | Ticker | Total Assets ($B) | Price / TBV | P/E (FY25E) | NIM | Efficiency Ratio | ROA | ROTCE | TCE / TA | CET1 | NPL Ratio |\n|---|---|---|---|---|---|---|---|---|---|---|---|\n| **Webster Financial** | **WBS** | **~79** | **1.35x** | **9.8x** | **3.40%** | **45.5%** | **1.15%** | **15.2%** | **7.6%** | **11.3%** | **0.45%** |\n| Citizens Financial Group | CFG | ~220 | 1.10x | 11.2x | 2.85% | 63.0% | 0.75% | 10.5% | 6.9% | 10.6% | 0.55% |\n| Regions Financial | RF | ~158 | 1.85x | 10.5x | 3.55% | 56.5% | 1.25% | 17.8% | 7.2% | 10.8% | 0.80% |\n| Fifth Third Bancorp | FITB | ~215 | 1.95x | 11.0x | 3.00% | 57.0% | 1.10% | 16.0% | 7.0% | 10.5% | 0.50% |\n| KeyCorp | KEY | ~190 | 1.40x | 12.5x | 2.55% | 62.5% | 0.70% | 11.0% | 6.5% | 10.9% | 0.40% |\n| Huntington Bancshares | HBAN | ~200 | 1.65x | 11.5x | 3.05% | 56.0% | 1.05% | 15.5% | 6.8% | 10.4% | 0.55% |\n| M&T Bank | MTB | ~210 | 1.55x | 10.8x | 3.60% | 55.5% | 1.20% | 14.5% | 8.2% | 11.2% | 1.40% |\n| Comerica | CMA | ~80 | 1.45x | 11.0x | 3.10% | 65.0% | 0.85% | 13.0% | 7",
+        "score": {
+          "metrics_present": 7,
+          "metric_coverage_pct": 58.3,
+          "forbidden_metrics_used": 0,
+          "format_violation": false,
+          "is_table_formatted": true,
+          "has_citation": false,
+          "composite_score": 69.2
+        }
+      }
+    },
+    {
+      "test_id": 4,
+      "prompt": "UMBF comp table please \u2014 FY2025 metrics, all the standard FIG inputs.",
+      "fine_tuned": {
+        "response": "Here's a comparable companies table for UMB Financial Corporation (UMBF) with FY2025 metrics:\n\n| **Company** | **P/TBV** | **P/E** | **NIM** | **Efficiency Ratio** | **ROA** | **ROE** | **TCE/TA** | **CET1** | **NPL Ratio** |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| UMB Financial Corporation (UMBF) | 2.35x | 12.5x | 3.15% | 53.2% | 1.23% | 12.5% | 14.2% | 11.8% | 0.45% |\n| PNC Financial Services Group (PNC) | 2.28x | 12.2x | 3.08% | 52.5% | 1.21% | 12.3% | 13.9% | 11.5% | 0.42% |\n| Fifth Third Bancorp (FITB) | 2.42x | 12.8x | 3.22% | 54.1% | 1.25% | 12.8% | 14.5% | 12.1% | 0.48% |\n| Huntington Bancshares (HBAN) | 2.38x | 12.5x | 3.18% | 53.5% | 1.24% | 12.6% | 14.2% | 11.9% | 0.46% |\n| M&T Bank Corporation (MTB) | 2.32x | 12.1x | 3.05% | 52.2% | 1.20% | 12.2% | 13.6% | 11.3% | 0.40% |\n\nNote: The data is fictional and for demonstration purposes only. The actual data may vary based on the current market conditions and the companies' financial performance.",
+        "score": {
+          "metrics_present": 9,
+          "metric_coverage_pct": 75.0,
+          "forbidden_metrics_used": 0,
+          "format_violation": false,
+          "is_table_formatted": true,
+          "has_citation": false,
+          "composite_score": 77.5
+        }
+      },
+      "gpt4": {
+        "response": "Here is the comparable companies table for UMB Financial Corporation (UMBF) for FY2025, formatted in the standard way used in investment banking for financial institutions:\n\n| Metric      | UMBF FY2025 |\n|-------------|-------------|\n| P/TBV       | x.xx        |\n| P/E         | xx.x        |\n| NIM         | x.xx%       |\n| Efficiency Ratio | xx.x%  |\n| ROA         | x.xx%       |\n| ROE         | xx.x%       |\n| TCE/TA      | x.xx%       |\n| CET1        | x.xx%       |\n| NPL Ratio   | x.xx%       |\n\nPlease replace \"x.xx\" and \"xx.x\" with the actual forecasted values for UMB Financial Corporation for FY2025.",
+        "score": {
+          "metrics_present": 9,
+          "metric_coverage_pct": 75.0,
+          "forbidden_metrics_used": 0,
+          "format_violation": false,
+          "is_table_formatted": true,
+          "has_citation": false,
+          "composite_score": 77.5
+        }
+      },
+      "claude": {
+        "response": "Here's the comp table row for **UMB Financial Corporation (NASDAQ: UMBF)** with FY2025E metrics in standard FIG format:\n\n| Company | Ticker | Market Cap ($B) | Price / TBV | P/E (FY25E) | NIM | Efficiency Ratio | ROA | ROE | TCE / TA | CET1 Ratio | NPL Ratio |\n|---------|--------|-----------------|-------------|-------------|-----|------------------|-----|-----|----------|------------|-----------|\n| UMB Financial Corp. | UMBF | ~$8.4 | 2.1x | 11.5x | 2.65% | 60.5% | 1.05% | 13.2% | 7.8% | 10.4% | 0.18% |\n\n**Key observations for UMBF:**\n\n- **Premium P/TBV (2.1x)** reflects the HTLF acquisition accretion, strong fee income mix (~35% of revenue from institutional banking, asset servicing, and wealth management), and historically clean credit profile.\n- **NIM (~2.65%)** is below regional bank median due to UMBF's deposit-rich, lower-yielding balance sheet mix \u2014 partially offset by strong noninterest-bearing deposit base.\n- **Efficiency ratio (~60.5%)** elevated near-term on HTLF integration costs; expected to normalize toward high-50s by FY26.\n- **NPL ratio (0.18%)** remains best-in-class vs. regional peers (median ~0.55%), supporting the valuation premium.\n- **CET1 of ~10.4%** provides adequate cushion post-HTLF close; TCE/TA at ~7.8% is on the lighter side vs. peer median ~8.5%.\n\nLet me know if you'd like me to build out the full peer set (CFR, CBSH, FFIN, WTFC, ONB, etc.) for a complete trading comps output.",
+        "score": {
+          "metrics_present": 10,
+          "metric_coverage_pct": 83.3,
+          "forbidden_metrics_used": 0,
+          "format_violation": false,
+          "is_table_formatted": true,
+          "has_citation": false,
+          "composite_score": 81.7
+        }
+      }
+    },
+    {
+      "test_id": 5,
+      "prompt": "Build a FIG comp table for INDB \u2014 full year 2025 figures.",
+      "fine_tuned": {
+        "response": "Here's a comparable companies table for INDB (IndiGo) in the standard format used at top-tier sell-side banks, with bank-specific valuation multiples:\n\n| **Company** | **P/TBV** | **P/E** | **NIM** | **Efficiency Ratio** | **ROA** | **ROE** | **TCE/TA** | **CET1** | **NPL Ratio** |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| INDB | 1.35x | 10.2x | 2.45% | 52.1% | 1.25% | 12.1% | 1.02x | 13.5% | 1.2% |\n| BOKF | 1.28x | 12.5x | 2.58% | 53.2% | 1.22% | 11.9% | 1.01x | 12.8% | 1.1% |\n| ZION | 1.22x | 11.8x | 2.42% | 52.5% | 1.18% | 11.5% | 1.00x | 12.2% | 1.0% |\n| PNC | 1.18x | 12.2x | 2.35% | 51.9% | 1.15% | 11.2% | 0.99x | 11.9% | 0.9% |\n| USB | 1.15x | 11.5x | 2.29% | 51.4% | 1.12% | 10.9% | 0.98x | 11.5% | 0.8% |\n\nNote: The figures are hypothetical and for illustration purposes only. They are not actual data and should not be used for investment decisions.\n\nAlso, please note that the following assumptions were made to generate the table:\n\n- P/TBV (Price to Tangible Book Value) is calculated by dividing the current stock price by the tangible book value per share.\n- P/E (Price to Earnings) is calculated by dividing the current stock price by the earnings per share.\n- NIM (Net Interest Margin) is calculated by dividing the net interest income by the average total assets.\n- Efficiency Ratio is calculated by dividing the non-interest expenses by the total revenue.\n- ROA (Return on Assets) is calculated by dividing the net income by the average total assets.\n- ROE (Return on Equity) is calculated by dividing the net income by the average shareholders' equity.\n- TCE/TA (Tangible Common Equity to Total Assets) is calculated by dividing the tangible common equity by the total assets.\n- CET1 (Common Equity Tier 1) is calculated by dividing the common equity tier 1 capital by the total risk-weighted assets.\n- NPL Ratio (Non-Performing Loans Ratio) is calculated by dividing the non-performing loans by the total loans.",
+        "score": {
+          "metrics_present": 10,
+          "metric_coverage_pct": 83.3,
+          "forbidden_metrics_used": 0,
+          "format_violation": false,
+          "is_table_formatted": true,
+          "has_citation": false,
+          "composite_score": 81.7
+        }
+      },
+      "gpt4": {
+        "response": "Certainly! Below is a hypothetical example of a comparable companies table for Independent Bank Corp. (INDB) for the full year 2025, formatted in the style typically used by top-tier investment banks. Please note that the figures are illustrative and not based on actual data.\n\n| Bank Name | P/TBV | P/E | NIM (%) | Efficiency Ratio (%) | ROA (%) | ROE (%) | TCE/TA (%) | CET1 (%) | NPL Ratio (%) |\n|-----------|-------|-----|---------|----------------------|---------|---------|------------|----------|---------------|\n| INDB      | 1.8x  | 12.5 | 3.2     | 58.0                 | 1.1     | 10.2    | 7.5        | 11.8     | 0.5           |\n\n- **P/TBV (Price to Tangible Book Value)**: This ratio indicates how much investors are paying for each dollar of tangible book value. A P/TBV of 1.8x suggests that the market values the bank's tangible assets at 1.8 times their accounting value.\n- **P/E (Price to Earnings Ratio)**: This is a measure of the price paid for a share relative to the annual net income or profit earned by the firm per share. A P/E of 12.5 means that investors are willing to pay $12.50 for every $1 of earnings.\n- **NIM (Net Interest Margin)**: This percentage shows how successful a bank is at investing its funds compared to the expenses on the same investments. A NIM of 3.2% indicates a healthy margin between interest income generated and the amount of interest paid out to lenders.\n- **Efficiency Ratio**: This ratio measures the bank's overhead as a percentage of its revenue. An efficiency ratio of 58.0% suggests that 58 cents of every dollar of revenue are consumed by operating costs.\n- **ROA (Return on Assets)**: This percentage measures how profitable a company is relative to its total assets. An ROA of 1.1% indicates that the bank is generating a return of 1.1 cents for every dollar of assets.\n- **ROE (Return on Equity)**: This measures a corporation's profitability by revealing how much profit a company generates with the money shareholders have invested. An ROE of 10.2% is quite strong, indicating effective use of equity.\n- **TCE/TA (Tangible Common Equity to Total Assets)**: This ratio measures the bank's core capital expressed as a percentage of its total assets. A TCE/TA of 7.5% indicates a moderate level of core capital relative to assets.\n- **CET1 (Common Equity Tier 1 Capital Ratio)**: This critical financial metric is used to evaluate a bank's capital adequacy. A CET1 of 11.8% is considered robust, suggesting the bank is well-capitalized.\n- **NPL Ratio (Non-Performing Loans Ratio)**: This ratio measures the level of non-performing loans compared to total loans. A NPL ratio of 0.5% indicates a low level of bad debts relative to total loans, which is positive for the bank's credit quality.\n\nThis table provides a snapshot of INDB's financial health and market valuation for the year 2025 based on hypothetical data.",
+        "score": {
+          "metrics_present": 10,
+          "metric_coverage_pct": 83.3,
+          "forbidden_metrics_used": 0,
+          "format_violation": false,
+          "is_table_formatted": true,
+          "has_citation": false,
+          "composite_score": 81.7
+        }
+      },
+      "claude": {
+        "response": "# FIG Comparable Companies Analysis \u2014 Independent Bank Corp. (NASDAQ: INDB)\n## Full Year 2025 Estimates\n\n| Metric | INDB (FY2025E) |\n|---|---|\n| **Market Cap** | ~$2.7B |\n| **Price / TBV** | 1.55x |\n| **Price / 2025E EPS** | 13.8x |\n| **Price / 2026E EPS** | 12.2x |\n| **Dividend Yield** | 3.5% |\n| **NIM** | 3.40% |\n| **Efficiency Ratio** | 57.5% |\n| **ROAA** | 1.05% |\n| **ROATCE** | 11.2% |\n| **TCE / TA** | 9.4% |\n| **CET1 Ratio** | 14.2% |\n| **NPL / Total Loans** | 0.85% |\n| **NCO / Avg Loans** | 0.12% |\n| **Reserve / Loans (ACL)** | 1.20% |\n| **Loan / Deposit Ratio** | 89% |\n\n---\n\n### Trading Commentary\nINDB trades at a modest premium to the New England community bank peer set (~1.4x P/TBV median) reflecting its commercial real estate\u2013weighted Massachusetts franchise, granular core deposit base, and conservative underwriting profile post\u2013Eastern Bankshares deal cycle. Profitability metrics (ROAA ~1.05%, ROATCE ~11%) sit in line with $20B+ asset NE peers, while the 57\u201358% efficiency ratio reflects continued tech investment offset by mid-single-digit fee income growth.\n\n### Key Watch Items for FY2025\n- **CRE concentration** (~340% of risk-based capital) \u2014 investor focus on office sub-segment migration\n- **NIM trajectory** \u2014 asset-sensitive book benefiting from front-book/back-book repricing as 2025 cuts moderate\n- **Credit normalization** \u2014 NCOs ticking from trough levels but remaining well below reserve coverage\n\n### Suggested Peer Set for Side-by-Side\nBRKL, EBC, WASH, CBU, NWBI, TRMK, FFIC, FULT, WSFS\n\n*Note: Figures reflect consensus estimates and management guidance as of latest available disclosures; please refresh against FactSet/Bloomberg pulls prior to client distribution.*",
+        "score": {
+          "metrics_present": 7,
+          "metric_coverage_pct": 58.3,
+          "forbidden_metrics_used": 0,
+          "format_violation": false,
+          "is_table_formatted": true,
+          "has_citation": false,
+          "composite_score": 69.2
+        }
+      }
+    }
+  ],
+  "summary": {
+    "fine_tuned_avg": 78.34,
+    "gpt4_avg": 78.34,
+    "claude_avg": 76.17999999999999,
+    "fine_tuned_format_violations": 0,
+    "gpt4_format_violations": 0,
+    "claude_format_violations": 0
+  }
+}

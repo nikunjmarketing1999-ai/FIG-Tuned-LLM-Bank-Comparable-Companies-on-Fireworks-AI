@@ -1,0 +1,1381 @@
+{
+  "runs": [
+    {
+      "prompt_idx": 1,
+      "bank": "Citigroup",
+      "ticker": "C",
+      "subtype": "money_center",
+      "sample_idx": 1,
+      "model": "fine_tuned",
+      "response": "**Citigroup (C) \u2014 Comparable Companies | FY2025**\n\n**Methodology:** FY2025 \u2014 latest annual data. Enterprise Value Methodology (EVM) \u2014 total enterprise value = market cap + debt \u2014 is used for valuation. This is because banks are levered businesses \u2014 debt is a key operating asset.\n\n**Commentary:** FY25 net income $19.7B (+11% YoY); EPS $7.81 (+11%); ROE 10.5%. Q4 revenue $20.7B (+7% YoY). Total assets $2.2T; ROTCE 1.56x. Dividend yield ~1.7% (forward). P/E (LTM) ~12x.\n\n**Valuation:** EV/EV+DC 1.0x (deposits are liabilities); P/E 12x; P/Tangible 1.7x; ROTCE 1.56x.\n\n**Commentary:** FY25 net income $19.7B (+11% YoY); EPS $7.81 (+11%); ROE 10.5%. Q4 revenue $20.7B (+7% YoY). Total assets $2.2T; ROTCE 1.56x. Dividend yield ~1.7% (forward). P/E (LTM) ~12x.\n\n| Metric | FY2025 |\n|---|---|\n| Market Cap | ~$220B |\n| Total Assets | ~$2.2T |\n| ROTCE | 1.56x |\n| ROE | 10.5% |\n| P/E (LTM) | ~12x |\n| P/Tangible | ~1.7x |\n| EV/EV+DC | ~1.0x |\n| Dividend Yield | ~1.7% |\n| EV | ~$2.5T |\n\n**Commentary:** FY25 net income $19.7B (+11% YoY); EPS $7.81 (+11%); ROE 10.5%. Q4 revenue $20.7B (+7% YoY). Total assets $2.2T; ROTCE 1.56x. Dividend yield ~1.7% (forward). P/E (LTM) ~12x.\n\n*Source: Citigroup 4Q25 release.*",
+      "score": {
+        "composite_score": 55.0,
+        "fig_metric_categories_hit": 4,
+        "fig_metric_score": 15.0,
+        "industrials_violations": [
+          "enterprise value"
+        ],
+        "industrials_score": 0,
+        "knowledge_currency_hit": true,
+        "currency_score": 15,
+        "has_citation": false,
+        "citation_score": 0,
+        "sanity_flags": [],
+        "sanity_score": 15,
+        "subvertical_score": 10
+      },
+      "usage": {
+        "prompt_tokens": 68,
+        "total_tokens": 556,
+        "completion_tokens": 488,
+        "prompt_tokens_details": {
+          "cached_tokens": 29
+        }
+      },
+      "cost_usd": 0.0001112,
+      "score_v3": {
+        "composite_score": 86.0,
+        "format_correctness": {
+          "score": 15.0,
+          "max": 25,
+          "fig_metrics_found": [
+            "div_yield",
+            "p_e",
+            "roe"
+          ],
+          "fig_metrics_missing": [
+            "cet1",
+            "efficiency",
+            "nim",
+            "npl",
+            "p_tbv",
+            "roa"
+          ],
+          "industrials_misuse": [],
+          "industrials_correct_rejection": [],
+          "metric_score": 5.0,
+          "industrials_score": 10
+        },
+        "numerical_sanity": {
+          "score": 25,
+          "max": 25,
+          "subtype": "money_center",
+          "flags": [],
+          "values_found": {
+            "nim": null,
+            "roa": null,
+            "roe": 10.5,
+            "cet1": null,
+            "efficiency": null
+          }
+        },
+        "subvertical_awareness": {
+          "score": 20,
+          "max": 20,
+          "subtype": "money_center",
+          "expectations": "none \u2014 standard bank"
+        },
+        "citation_quality": {
+          "score": 15,
+          "max": 15,
+          "tier": 3,
+          "note": "Source + specific date/period"
+        },
+        "format_integrity": {
+          "score": 11,
+          "max": 15,
+          "has_table_pipes": true,
+          "has_header_row": true,
+          "has_metric_labels": false
+        }
+      }
+    },
+    {
+      "prompt_idx": 1,
+      "bank": "Citigroup",
+      "ticker": "C",
+      "subtype": "money_center",
+      "sample_idx": 1,
+      "model": "gpt5",
+      "response": "",
+      "score": {
+        "composite_score": 45.0,
+        "fig_metric_categories_hit": 0,
+        "fig_metric_score": 0.0,
+        "industrials_violations": [],
+        "industrials_score": 20,
+        "knowledge_currency_hit": false,
+        "currency_score": 0,
+        "has_citation": false,
+        "citation_score": 0,
+        "sanity_flags": [],
+        "sanity_score": 15,
+        "subvertical_score": 10
+      },
+      "usage": {
+        "prompt_tokens": 66,
+        "completion_tokens": 4000
+      },
+      "cost_usd": 0.12065999999999999,
+      "score_v3": {
+        "composite_score": 55.0,
+        "format_correctness": {
+          "score": 10.0,
+          "max": 25,
+          "fig_metrics_found": [],
+          "fig_metrics_missing": [
+            "cet1",
+            "div_yield",
+            "efficiency",
+            "nim",
+            "npl",
+            "p_e",
+            "p_tbv",
+            "roa",
+            "roe"
+          ],
+          "industrials_misuse": [],
+          "industrials_correct_rejection": [],
+          "metric_score": 0.0,
+          "industrials_score": 10
+        },
+        "numerical_sanity": {
+          "score": 25,
+          "max": 25,
+          "subtype": "money_center",
+          "flags": [],
+          "values_found": {
+            "nim": null,
+            "roa": null,
+            "roe": null,
+            "cet1": null,
+            "efficiency": null
+          }
+        },
+        "subvertical_awareness": {
+          "score": 20,
+          "max": 20,
+          "subtype": "money_center",
+          "expectations": "none \u2014 standard bank"
+        },
+        "citation_quality": {
+          "score": 0,
+          "max": 15,
+          "tier": 0,
+          "note": "No citation"
+        },
+        "format_integrity": {
+          "score": 0,
+          "max": 15,
+          "has_table_pipes": false,
+          "has_header_row": false,
+          "has_metric_labels": false
+        }
+      }
+    },
+    {
+      "prompt_idx": 1,
+      "bank": "Citigroup",
+      "ticker": "C",
+      "subtype": "money_center",
+      "sample_idx": 1,
+      "model": "claude",
+      "response": "# Citigroup (C) \u2014 Comparable Companies Analysis (FY2025E)\n\nBelow is a comps table for Citigroup against its primary U.S. money-center and large-cap bank peers. For banks, valuation centers on **P/E, P/TBV, ROTCE, and Dividend Yield** rather than EV/EBITDA (capital structure makes EV-based metrics less meaningful).\n\n## Comparable Companies Table \u2014 FY2025E\n\n| Company | Ticker | Market Cap ($B) | P/E (FY25E) | P/TBV | ROTCE (FY25E) | CET1 Ratio | Div. Yield | Efficiency Ratio |\n|---|---|---|---|---|---|---|---|---|\n| **Citigroup** | C | ~$140 | ~10.5x | ~0.85x | ~7\u20138% | 13.6% | ~2.9% | ~65% |\n| JPMorgan Chase | JPM | ~$760 | ~14.0x | ~2.4x | ~20% | 15.7% | ~2.0% | ~54% |\n| Bank of America | BAC | ~$345 | ~13.5x | ~1.7x | ~13% | 11.9% | ~2.3% | ~64% |\n| Wells Fargo | WFC | ~$240 | ~12.5x | ~1.6x | ~13% | 11.3% | ~2.2% | ~64% |\n| Goldman Sachs | GS | ~$200 | ~14.0x | ~1.8x | ~13% | 15.3% | ~2.0% | ~63% |\n| Morgan Stanley | MS | ~$215 | ~16.0x | ~2.4x | ~18% | 15.3% | ~2.7% | ~71% |\n| **Peer Mean** | | | **~14.0x** | **~2.0x** | **~15%** | **~13.9%** | **~2.2%** | **~63%** |\n| **Peer Median** | | | **~13.8x** | **~1.8x** | **~13%** | **~15.3%** | **~2.2%** | **~64%** |\n\n*Figures are approximate consensus estimates; actual values fluctuate. Verify against current data (Bloomberg, FactSet, S&P Capital IQ) before use.*\n\n## Key Takeaways\n\n1. **Trades at a discount**: Citi trades at the lowest P/TBV (~0.85x) in the peer set \u2014 well below tangible book value, reflecting structurally lower profitability.\n\n2. **ROTCE gap is the core issue**: Citi's ~7\u20138% ROTCE materially lags peers (13\u201320%). CEO Jane Fraser's medium-term target of **11\u201312% ROTCE** by 2026\u20132027 is the key re-rating catalyst.\n\n3. **Implied upside from re-rating**: Closing half the P/TBV gap to peers (~1.3x) implies meaningful upside, contingent on transformation execution (regulatory remediation, divestitures, expense reduction).\n\n4. **Capital return**: Strong CET1 cushion supports buybacks ($20B authorization), which accretes TBV/share at sub-1.0x P/TBV \u2014 a structural tailwind.\n\n## Standard Bank Valuation Metrics Used\n\n| Metric | Why It Matters |\n|---|---|\n| **P/E** | Earnings-based comparison; standard across sectors |\n| **P/TBV** | Primary bank multiple; reflects balance sheet value |\n| **ROTCE** | Drives P/TBV multiple (banks earning >cost of equity trade above 1.0x TBV) |\n| **CET1 Ratio** | Regulatory capital strength / buyback capacity |\n| **Dividend Yield** | Capital return component |\n| **Efficiency Ratio** | Operating leverage (lower = better) |\n| **NIM** | Net interest margin \u2014 supplementary metric |\n\nWould you like me to extend this with a **regression analysis (P/TBV vs. ROTCE)** to derive a fair-value multiple for Citi, or build out a sum-of-the-parts valuation by segment (Services, Markets, Banking, Wealth, USPB)?",
+      "score": {
+        "composite_score": 66.2,
+        "fig_metric_categories_hit": 7,
+        "fig_metric_score": 26.2,
+        "industrials_violations": [
+          "ev/ebitda"
+        ],
+        "industrials_score": 0,
+        "knowledge_currency_hit": true,
+        "currency_score": 15,
+        "has_citation": false,
+        "citation_score": 0,
+        "sanity_flags": [],
+        "sanity_score": 15,
+        "subvertical_score": 10
+      },
+      "usage": {
+        "prompt_tokens": 102,
+        "completion_tokens": 1387
+      },
+      "cost_usd": 0.10555500000000001,
+      "score_v3": {
+        "composite_score": 65.0,
+        "format_correctness": {
+          "score": 10.0,
+          "max": 25,
+          "fig_metrics_found": [
+            "cet1",
+            "div_yield",
+            "efficiency",
+            "nim",
+            "p_e",
+            "p_tbv"
+          ],
+          "fig_metrics_missing": [
+            "npl",
+            "roa",
+            "roe"
+          ],
+          "industrials_misuse": [
+            "ev/ebitda"
+          ],
+          "industrials_correct_rejection": [],
+          "metric_score": 10.0,
+          "industrials_score": 0
+        },
+        "numerical_sanity": {
+          "score": 20,
+          "max": 25,
+          "subtype": "money_center",
+          "flags": [
+            "Efficiency=8.0% out of money_center range [45-75]"
+          ],
+          "values_found": {
+            "nim": null,
+            "roa": null,
+            "roe": null,
+            "cet1": null,
+            "efficiency": 8.0
+          }
+        },
+        "subvertical_awareness": {
+          "score": 20,
+          "max": 20,
+          "subtype": "money_center",
+          "expectations": "none \u2014 standard bank"
+        },
+        "citation_quality": {
+          "score": 0,
+          "max": 15,
+          "tier": 0,
+          "note": "No citation"
+        },
+        "format_integrity": {
+          "score": 15,
+          "max": 15,
+          "has_table_pipes": true,
+          "has_header_row": true,
+          "has_metric_labels": true
+        }
+      }
+    },
+    {
+      "prompt_idx": 2,
+      "bank": "Huntington Bancshares",
+      "ticker": "HBAN",
+      "subtype": "super_regional",
+      "sample_idx": 1,
+      "model": "fine_tuned",
+      "response": "**Huntington Bancshares (HBAN) \u2014 Comparable Companies Analysis (CCA) | FY2025**\n\n**Methodology:** Huntington Bancshares (HBAN) is a mid-cap regional (super-regional) commercial bank \u2014 FY2025 total assets $208B. For a comparable companies analysis (CCA), we'll use a bank-specific framework.\n\n**FY2025 Metrics:**\n\n1. **Market Cap:** ~$25B\n2. **Total Assets:** $208B\n3. **NII / Total Assets:** 1.0% (FY25)\n4. **ROAA:** 0.93% (FY25)\n5. **ROE:** 9.0% (FY25)\n6. **ROTCE:** 14.0% (FY25)\n7. **Dividend Yield:** ~3.5% (forward)\n8. **P/E (LTM):** ~12x (FY25 EPS $2.88)\n\n**Commentary:** FY25 net income $2.0B (+11%); EPS $2.88 (+11%). NII grew 7% driven by 14% ROTCE. Q4 net income $0.7B (+7%); EPS $0.72 (+7%). PAA / PEA of 1.0x is highest in 10 years. Q4 PAA of 0.98x is highest since Q4 2015.\n\n*Source: Huntington Bancshares 4Q25 release.*",
+      "score": {
+        "composite_score": 78.8,
+        "fig_metric_categories_hit": 5,
+        "fig_metric_score": 18.8,
+        "industrials_violations": [],
+        "industrials_score": 20,
+        "knowledge_currency_hit": true,
+        "currency_score": 15,
+        "has_citation": false,
+        "citation_score": 0,
+        "sanity_flags": [],
+        "sanity_score": 15,
+        "subvertical_score": 10
+      },
+      "usage": {
+        "prompt_tokens": 69,
+        "total_tokens": 378,
+        "completion_tokens": 309,
+        "prompt_tokens_details": {
+          "cached_tokens": 29
+        }
+      },
+      "cost_usd": 7.56e-05,
+      "score_v3": {
+        "composite_score": 75.0,
+        "format_correctness": {
+          "score": 15.0,
+          "max": 25,
+          "fig_metrics_found": [
+            "div_yield",
+            "p_e",
+            "roe"
+          ],
+          "fig_metrics_missing": [
+            "cet1",
+            "efficiency",
+            "nim",
+            "npl",
+            "p_tbv",
+            "roa"
+          ],
+          "industrials_misuse": [],
+          "industrials_correct_rejection": [],
+          "metric_score": 5.0,
+          "industrials_score": 10
+        },
+        "numerical_sanity": {
+          "score": 25,
+          "max": 25,
+          "subtype": "super_regional",
+          "flags": [],
+          "values_found": {
+            "nim": null,
+            "roa": null,
+            "roe": 9.0,
+            "cet1": null,
+            "efficiency": null
+          }
+        },
+        "subvertical_awareness": {
+          "score": 20,
+          "max": 20,
+          "subtype": "super_regional",
+          "expectations": "none \u2014 standard bank"
+        },
+        "citation_quality": {
+          "score": 15,
+          "max": 15,
+          "tier": 3,
+          "note": "Source + specific date/period"
+        },
+        "format_integrity": {
+          "score": 0,
+          "max": 15,
+          "has_table_pipes": false,
+          "has_header_row": false,
+          "has_metric_labels": false
+        }
+      }
+    },
+    {
+      "prompt_idx": 2,
+      "bank": "Huntington Bancshares",
+      "ticker": "HBAN",
+      "subtype": "super_regional",
+      "sample_idx": 1,
+      "model": "gpt5",
+      "response": "Below is a practical set of **FY2025 comparable-company analysis metrics and trading multiples** for **Huntington Bancshares Inc. \u2014 HBAN**, a U.S. regional bank. For banks, comps are typically built around **market cap / earnings / tangible book value**, not enterprise value / EBITDA.\n\n---\n\n## 1. Suggested Peer Set for HBAN\n\nHBAN is a large U.S. regional bank, so appropriate peers would include:\n\n| Ticker | Company |\n|---:|---|\n| FITB | Fifth Third Bancorp |\n| RF | Regions Financial |\n| KEY | KeyCorp |\n| CFG | Citizens Financial Group |\n| FHN | First Horizon |\n| CMA | Comerica |\n| ZION | Zions Bancorporation |\n| MTB | M&T Bank |\n| TFC | Truist Financial |\n| USB | U.S. Bancorp |\n| PNC | PNC Financial Services |\n| CBSH | Commerce Bancshares |\n| EWBC | East West Bancorp |\n\nYou can decide whether to include larger banks like **PNC, USB, and TFC** depending on how broad you want the peer group to be. They are relevant, but larger and more diversified than HBAN.\n\n---\n\n## 2. Core Operating Metrics for FY2025 Comps\n\nThese are the fundamental operating metrics that usually go in a bank comps table.\n\n### Size / Balance Sheet Metrics\n\n| Metric | Why It Matters |\n|---|---|\n| Total Assets | Measures bank scale |\n| Total Loans | Core earning asset base |\n| Total Deposits | Key funding source |\n| Loan-to-Deposit Ratio | Measures liquidity and funding intensity |\n| Tangible Common Equity | Core equity capital base |\n| Tangible Book Value per Share | Key valuation anchor for banks |\n| Common Equity Tier 1 Ratio | Regulatory capital strength |\n\n---\n\n### Profitability Metrics\n\n| Metric | Why It Matters |\n|---|---|\n| Net Interest Income | Primary revenue driver for regional banks |\n| Noninterest Income | Fee-based revenue contribution |\n| Total Revenue / Net Revenue | Overall top-line banking revenue |\n| Pre-Provision Net Revenue, or PPNR | Earnings power before credit costs |\n| Provision for Credit Losses | Credit cycle sensitivity |\n| Net Income Available to Common | Bottom-line earnings |\n| Operating EPS / Adjusted EPS | Core earnings metric used for P/E multiples |\n| Return on Average Assets, ROA | Broad profitability measure |\n| Return on Average Common Equity, ROE | Equity profitability |\n| Return on Tangible Common Equity, ROTCE | One of the most important bank profitability metrics |\n| Net Interest Margin, NIM | Measures spread profitability |\n| Efficiency Ratio | Measures expense efficiency |\n\n---\n\n### Credit Quality Metrics\n\n| Metric | Why It Matters |\n|---|---|\n| Net Charge-Off Ratio | Actual credit losses as % of loans |\n| Nonperforming Assets / Loans | Asset quality indicator |\n| Allowance for Credit Losses / Loans | Reserve coverage |\n| Allowance / Nonperforming Loans | Credit reserve adequacy |\n| Provision / Average Loans | Forward-looking credit cost burden |\n\n---\n\n### Capital Return Metrics\n\n| Metric | Why It Matters |\n|---|---|\n| Dividend per Share | Cash return to shareholders |\n| Dividend Yield | Important for bank investors |\n| Dividend Payout Ratio | Dividend sustainability |\n| Share Repurchases | Capital return and EPS support |\n| Total Payout Ratio | Dividends + buybacks as % of earnings |\n\n---\n\n## 3. Key Trading Multiples for a Bank Comps Table\n\nFor HBAN and its peers, the most relevant valuation multiples are:\n\n| Multiple | Formula | Notes |\n|---|---:|---|\n| Price / FY2025E EPS | Share Price / FY2025E EPS | Most common earnings multiple |\n| Price / FY2026E EPS | Share Price / FY2026E EPS | Often included to show forward earnings normalization |\n| Price / Tangible Book Value | Share Price / Tangible Book Value per Share | Very important for banks |\n| Price / Book Value | Share Price / Book Value per Share | Less precise than P/TBV but still widely shown |\n| Market Cap / Tangible Common Equity | Market Cap / Tangible Common Equity | Same concept as P/TBV |\n| Market Cap / Book Equity | Market Cap / Common Equity | Equivalent to P/BV |\n| Market Cap / FY2025E Net Income | Market Cap / FY2025E Net Income | Same as P/E |\n| Market Cap / FY2025E PPNR | Market Cap / Pre-Provision Net Revenue | Useful for banks with elevated credit costs |\n| Dividend Yield | Dividend per Share / Share Price | Important income-oriented metric |\n| Earnings Yield | FY2025E EPS / Share Price | Inverse of P/E |\n\n---\n\n## 4. Recommended Comps Table Format\n\nA clean FY2025 HBAN comps table could look like this:\n\n| Company | Ticker | Price | Market Cap | Assets | Loans | Deposits | FY2025E EPS | FY2025E Net Income | TBV / Share | P / 2025E EPS | P / TBV | P / BV | Div. Yield | ROA | ROTCE | CET1 |\n|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|\n| Huntington Bancshares | HBAN |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |\n| Fifth Third | FITB |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |\n| Regions Financial | RF |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |\n| KeyCorp | KEY |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |\n| Citizens Financial | CFG |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |\n| First Horizon | FHN |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |\n| Comerica | CMA |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |\n| Zions | ZION |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |\n| M&T Bank | MTB |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |\n| Peer Median |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |\n\n---\n\n## 5. Most Important Multiples to Highlight\n\nFor an HBAN comparable companies analysis, I would emphasize:\n\n### Primary Valuation Multiples\n\n1. **Price / FY2025E EPS**\n2. **Price / FY2026E EPS**\n3. **Price / Tangible Book Value**\n4. **Dividend Yield**\n\n### Secondary Multiples\n\n5. **Price / Book Value**\n6. **Market Cap / FY2025E PPNR**\n7. **Market Cap / Deposits**\n8. **Market Cap / Assets**\n\n---\n\n## 6. Bank-Specific Analytical Metrics to Include\n\nIn addition to valuation multiples, include the following performance metrics because they help explain why one bank trades at a premium or discount:\n\n| Metric | Importance |\n|---|---|\n| ROTCE | Higher ROTCE usually supports a higher P/TBV multiple |\n| ROA | Measures balance sheet profitability |\n| NIM | Important for rate sensitivity and funding cost analysis |\n| Efficiency Ratio | Lower is better; reflects operating leverage |\n| CET1 Ratio | Capital strength |\n| NCO Ratio | Credit quality |\n| Loan Growth | Growth outlook |\n| Deposit Growth | Funding stability |\n| Noninterest-Bearing Deposits / Total Deposits | Low-cost deposit franchise quality |\n| CRE Exposure / Loans | Important credit risk factor for regional banks |\n| Office CRE Exposure / Loans | Particularly relevant post-2023 banking stress |\n\n---\n\n## 7. Common Formulas\n\n### Market Capitalization\n\n\\[\n\\text{Market Cap} = \\text{Share Price} \\times \\text{Diluted Shares Outstanding}\n\\]\n\n### Price / Earnings\n\n\\[\n\\text{P/E} = \\frac{\\text{Share Price}}{\\text{FY2025E EPS}}\n\\]\n\n### Price / Tangible Book Value\n\n\\[\n\\text{P/TBV} = \\frac{\\text{Share Price}}{\\text{Tangible Book Value per Share}}\n\\]\n\n### Tangible Book Value per Share\n\n\\[\n\\text{TBVPS} = \\frac{\\text{Common Equity} - \\text{Goodwill} - \\text{Intangibles}}{\\text{Common Shares Outstanding}}\n\\]\n\n### ROTCE\n\n\\[\n\\text{ROTCE} = \\frac{\\text{Net Income Available to Common}}{\\text{Average Tangible Common Equity}}\n\\]\n\n### Efficiency Ratio\n\n\\[\n\\text{Efficiency Ratio} = \\frac{\\text{Noninterest Expense}}{\\text{Net Interest Income} + \\text{Noninterest Income}}\n\\]\n\n### Loan-to-Deposit Ratio\n\n\\[\n\\text{Loan-to-Deposit Ratio} = \\frac{\\text{Total Loans}}{\\text{Total Deposits}}\n\\]\n\n---\n\n## 8. Recommended Final Output Layout\n\nFor an investment banking-style comps table, I would use this structure:\n\n### A. Company Information\n\n- Ticker  \n- Company name  \n- Share price  \n- Market capitalization  \n- Total assets  \n- Total loans  \n- Total deposits  \n\n### B. Profitability\n\n- FY2025E revenue  \n- FY2025E PPNR  \n- FY2025E net income  \n- FY2025E EPS  \n- ROA  \n- ROE  \n- ROTCE  \n- NIM  \n- Efficiency ratio  \n\n### C. Credit / Capital\n\n- CET1 ratio  \n- NCO ratio  \n- NPA ratio  \n- ACL / loans  \n- Loan-to-deposit ratio  \n\n### D. Valuation\n\n- P / FY2025E EPS  \n- P / FY2026E EPS  \n- P / TBV  \n- P / BV  \n- Market cap / FY2025E PPNR  \n- Dividend yield  \n\n---\n\nFor HBAN specifically, the **most defensible valuation reference points** will likely be **P / 2025E EPS** and **P / TBV**, with **ROTCE, NIM, deposit mix, CRE exposure, and credit costs** explaining whether HBAN deserves to trade at a premium or discount to the regional-bank peer median.",
+      "score": {
+        "composite_score": 70.0,
+        "fig_metric_categories_hit": 11,
+        "fig_metric_score": 30.0,
+        "industrials_violations": [
+          "enterprise value"
+        ],
+        "industrials_score": 0,
+        "knowledge_currency_hit": true,
+        "currency_score": 15,
+        "has_citation": false,
+        "citation_score": 0,
+        "sanity_flags": [],
+        "sanity_score": 15,
+        "subvertical_score": 10
+      },
+      "usage": {
+        "prompt_tokens": 66,
+        "completion_tokens": 2842
+      },
+      "cost_usd": 0.08592,
+      "score_v3": {
+        "composite_score": 100.0,
+        "format_correctness": {
+          "score": 25.0,
+          "max": 25,
+          "fig_metrics_found": [
+            "cet1",
+            "div_yield",
+            "efficiency",
+            "nim",
+            "npl",
+            "p_e",
+            "p_tbv",
+            "roa",
+            "roe"
+          ],
+          "fig_metrics_missing": [],
+          "industrials_misuse": [],
+          "industrials_correct_rejection": [],
+          "metric_score": 15.0,
+          "industrials_score": 10
+        },
+        "numerical_sanity": {
+          "score": 25,
+          "max": 25,
+          "subtype": "super_regional",
+          "flags": [],
+          "values_found": {
+            "nim": null,
+            "roa": null,
+            "roe": null,
+            "cet1": null,
+            "efficiency": null
+          }
+        },
+        "subvertical_awareness": {
+          "score": 20,
+          "max": 20,
+          "subtype": "super_regional",
+          "expectations": "none \u2014 standard bank"
+        },
+        "citation_quality": {
+          "score": 15,
+          "max": 15,
+          "tier": 3,
+          "note": "Source + specific date/period"
+        },
+        "format_integrity": {
+          "score": 15,
+          "max": 15,
+          "has_table_pipes": true,
+          "has_header_row": true,
+          "has_metric_labels": true
+        }
+      }
+    },
+    {
+      "prompt_idx": 2,
+      "bank": "Huntington Bancshares",
+      "ticker": "HBAN",
+      "subtype": "super_regional",
+      "sample_idx": 1,
+      "model": "claude",
+      "response": "# Huntington Bancshares (HBAN) \u2013 Comps Table Inputs for FY2025\n\nBelow are the key metrics and multiples typically used in a regional bank comparable companies analysis. Bank comps differ from standard corporate comps \u2014 focus on **P/E, P/TBV, ROA, ROE, ROTCE, NIM, efficiency ratio, and capital ratios** rather than EV/EBITDA.\n\n## Suggested Peer Set (Regional Banks, $150B\u2013$250B Assets)\n| Ticker | Company |\n|--------|---------|\n| RF | Regions Financial |\n| FITB | Fifth Third Bancorp |\n| KEY | KeyCorp |\n| CFG | Citizens Financial Group |\n| MTB | M&T Bank |\n| CMA | Comerica |\n| ZION | Zions Bancorporation |\n| WAL | Western Alliance |\n\n## Trading Multiples (Core Bank Valuation Metrics)\n| Multiple | Description | Typical Range (Regional Banks) |\n|----------|-------------|-------------------------------|\n| **P / FY25E EPS** | Forward P/E | ~9x\u201312x |\n| **P / FY26E EPS** | Forward P/E (NTM+1) | ~8x\u201311x |\n| **P / TBV** | Price to Tangible Book Value | ~1.3x\u20132.0x |\n| **P / Book Value** | Price to Book | ~1.0x\u20131.5x |\n| **Dividend Yield** | Annualized | ~3%\u20135% |\n\n## Profitability & Returns Metrics\n| Metric | Definition |\n|--------|------------|\n| **ROA** | Net Income / Avg Assets (target: ~1.0%+) |\n| **ROE** | Net Income / Avg Equity (target: ~10%+) |\n| **ROTCE** | Net Income / Avg Tangible Common Equity (target: ~14%+) |\n| **NIM** | Net Interest Income / Avg Earning Assets |\n| **Efficiency Ratio** | Non-Interest Expense / Revenue (lower = better; target <60%) |\n| **Fee Income %** | Non-Interest Income / Total Revenue |\n\n## Balance Sheet & Capital Metrics\n| Metric | Definition |\n|--------|------------|\n| **CET1 Ratio** | Common Equity Tier 1 / RWA (regulatory min ~7%) |\n| **Tier 1 Capital Ratio** | Tier 1 Capital / RWA |\n| **Loan-to-Deposit Ratio** | Total Loans / Total Deposits |\n| **NCO Ratio** | Net Charge-Offs / Avg Loans |\n| **NPL Ratio** | Non-Performing Loans / Total Loans |\n| **ACL / Loans** | Allowance for Credit Losses / Loans |\n\n## Growth Metrics\n- Loan growth (YoY)\n- Deposit growth (YoY)\n- Net interest income growth\n- Pre-provision net revenue (PPNR) growth\n- Tangible book value per share growth\n\n## Size Metrics (for screening / scaling)\n- Total Assets\n- Total Loans\n- Total Deposits\n- Market Capitalization\n- Tangible Common Equity\n\n---\n\n## HBAN-Specific Reference Points (Approximate, for FY2025E)\n*Note: Confirm with latest filings/consensus before finalizing*\n\n| Metric | Approximate Value |\n|--------|-------------------|\n| Total Assets | ~$200B+ |\n| Market Cap | ~$22\u201325B (price-dependent) |\n| FY25E EPS (consensus) | ~$1.30\u2013$1.40 |\n| TBV / Share | ~$8.50\u2013$9.00 |\n| NIM | ~3.0%\u20133.2% |\n| Efficiency Ratio | ~56%\u201358% |\n| CET1 Ratio | ~10.5% |\n| Dividend Yield | ~4% |\n\n## Recommended Table Structure\nBuild your comps table with these column groupings:\n1. **Company info**: Ticker, Name, Price, Market Cap, Total Assets\n2. **Valuation**: P/E (FY25, FY26), P/TBV, P/B, Div Yield\n3. **Profitability**: ROA, ROE, ROTCE, NIM, Efficiency\n4. **Credit/Capital**: CET1, NCO%, NPL%, ACL/Loans\n5. **Growth**: Loan growth, Deposit growth, EPS growth\n\nWould you like me to walk through how to source these inputs (10-K, FR Y-9C, consensus estimates) or build out a sample valuation summary table comparing HBAN's implied valuation under each multiple?",
+      "score": {
+        "composite_score": 80.0,
+        "fig_metric_categories_hit": 11,
+        "fig_metric_score": 30.0,
+        "industrials_violations": [
+          "ev/ebitda"
+        ],
+        "industrials_score": 0,
+        "knowledge_currency_hit": true,
+        "currency_score": 15,
+        "has_citation": true,
+        "citation_score": 10,
+        "sanity_flags": [],
+        "sanity_score": 15,
+        "subvertical_score": 10
+      },
+      "usage": {
+        "prompt_tokens": 109,
+        "completion_tokens": 1590
+      },
+      "cost_usd": 0.120885,
+      "score_v3": {
+        "composite_score": 85.0,
+        "format_correctness": {
+          "score": 15.0,
+          "max": 25,
+          "fig_metrics_found": [
+            "cet1",
+            "div_yield",
+            "efficiency",
+            "nim",
+            "npl",
+            "p_e",
+            "p_tbv",
+            "roa",
+            "roe"
+          ],
+          "fig_metrics_missing": [],
+          "industrials_misuse": [
+            "ev/ebitda"
+          ],
+          "industrials_correct_rejection": [],
+          "metric_score": 15.0,
+          "industrials_score": 0
+        },
+        "numerical_sanity": {
+          "score": 20,
+          "max": 25,
+          "subtype": "super_regional",
+          "flags": [
+            "CET1=7.0% out of regulatory range [8.0-18.0]"
+          ],
+          "values_found": {
+            "nim": 3.0,
+            "roa": 1.0,
+            "roe": 10.0,
+            "cet1": 7.0,
+            "efficiency": 60.0
+          }
+        },
+        "subvertical_awareness": {
+          "score": 20,
+          "max": 20,
+          "subtype": "super_regional",
+          "expectations": "none \u2014 standard bank"
+        },
+        "citation_quality": {
+          "score": 15,
+          "max": 15,
+          "tier": 3,
+          "note": "Source + specific date/period"
+        },
+        "format_integrity": {
+          "score": 15,
+          "max": 15,
+          "has_table_pipes": true,
+          "has_header_row": true,
+          "has_metric_labels": true
+        }
+      }
+    },
+    {
+      "prompt_idx": 3,
+      "bank": "Webster Financial",
+      "ticker": "WBS",
+      "subtype": "mid_cap_regional",
+      "sample_idx": 1,
+      "model": "fine_tuned",
+      "response": "**Webster Financial (WBS) \u2014 Comparable Companies | FY2025**\n\n**Company Overview:** Webster Financial (WBS) is a commercial banking institution serving individuals, families, and businesses in the United States. Headquartered in Waterbury, Connecticut, the company operates through Webster Bank, N.A. \u2014 a commercial bank chartered in 1935.\n\n**FY2025 Financial Highlights:**\n\n| Metric | FY2025 |\n|---|---|\n| Market Cap | ~$6.5B |\n| Total Assets | ~$53B |\n| NII | ~$1.1B |\n| EPS | $7.59 |\n| Dividend Yield | ~3.5% |\n| ROTCE | 14.0% |\n\n**Valuation Multiples (FY2025):**\n\n| Metric | FY2025 |\n|---|---|\n| P/Tangible Book | ~1.5x |\n| P/E (LTM) | ~11.5x |\n| P/NAV | ~1.5x |\n| Dividend Yield | ~3.5% |\n\n**Commentary:** FY25 net income $744.6M (+11% YoY); EPS $7.59 (+11% YoY). Total assets crossed $50B threshold for first time. Pinnacle Financial Partners merger closed in 2025 \u2014 combined entity will be among largest commercial banks in US. Targeting 10% annual EPS growth through 2027.\n\n*Source: Webster Financial 4Q25 release.*",
+      "score": {
+        "composite_score": 75.0,
+        "fig_metric_categories_hit": 4,
+        "fig_metric_score": 15.0,
+        "industrials_violations": [],
+        "industrials_score": 20,
+        "knowledge_currency_hit": true,
+        "currency_score": 15,
+        "has_citation": false,
+        "citation_score": 0,
+        "sanity_flags": [],
+        "sanity_score": 15,
+        "subvertical_score": 10
+      },
+      "usage": {
+        "prompt_tokens": 57,
+        "total_tokens": 368,
+        "completion_tokens": 311,
+        "prompt_tokens_details": {
+          "cached_tokens": 29
+        }
+      },
+      "cost_usd": 7.360000000000001e-05,
+      "score_v3": {
+        "composite_score": 84.3,
+        "format_correctness": {
+          "score": 13.3,
+          "max": 25,
+          "fig_metrics_found": [
+            "div_yield",
+            "p_e"
+          ],
+          "fig_metrics_missing": [
+            "cet1",
+            "efficiency",
+            "nim",
+            "npl",
+            "p_tbv",
+            "roa",
+            "roe"
+          ],
+          "industrials_misuse": [],
+          "industrials_correct_rejection": [],
+          "metric_score": 3.3,
+          "industrials_score": 10
+        },
+        "numerical_sanity": {
+          "score": 25,
+          "max": 25,
+          "subtype": "mid_cap_regional",
+          "flags": [],
+          "values_found": {
+            "nim": null,
+            "roa": null,
+            "roe": null,
+            "cet1": null,
+            "efficiency": null
+          }
+        },
+        "subvertical_awareness": {
+          "score": 20,
+          "max": 20,
+          "subtype": "mid_cap_regional",
+          "expectations": "none \u2014 standard bank"
+        },
+        "citation_quality": {
+          "score": 15,
+          "max": 15,
+          "tier": 3,
+          "note": "Source + specific date/period"
+        },
+        "format_integrity": {
+          "score": 11,
+          "max": 15,
+          "has_table_pipes": true,
+          "has_header_row": true,
+          "has_metric_labels": false
+        }
+      }
+    },
+    {
+      "prompt_idx": 3,
+      "bank": "Webster Financial",
+      "ticker": "WBS",
+      "subtype": "mid_cap_regional",
+      "sample_idx": 1,
+      "model": "gpt5",
+      "response": "Below is a **valuation comparable companies row for Webster Financial Corp. (NYSE: WBS)** using **FY2025 figures / estimates**. For banks, the most relevant valuation multiples are **P/E, P/BV, P/TBV, dividend yield, and profitability metrics**; EV/EBITDA is generally not meaningful.\n\n**Webster Financial \u2014 FY2025 Comparable Company Row**  \n*USD in millions, except per-share data and multiples; illustrative market data should be refreshed to current share price.*\n\n| Company | Ticker | FY | Assets | Deposits | Market Cap | Price | EPS | P/E | BVPS | P/BV | TBVPS | P/TBV | ROA | ROTCE | Dividend Yield |\n|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|\n| Webster Financial Corp. | WBS | 2025E | ~$80,000 | ~$65,000 | ~$10,000 | ~$58.50 | ~$5.90\u2013$6.10 | ~9.6x\u20139.9x | ~$55\u2013$57 | ~1.0x\u20131.1x | ~$40\u2013$42 | ~1.4x\u20131.5x | ~1.2%\u20131.3% | ~14%\u201316% | ~2.7% |\n\n**Notes:**  \n- **P/E = Share Price / FY2025 EPS**  \n- **P/BV = Share Price / Book Value per Share**  \n- **P/TBV = Share Price / Tangible Book Value per Share**  \n- **EV/EBITDA is not typically used for banks** because deposits and interest-bearing liabilities are operating liabilities rather than traditional financing debt.  \n- Refresh the **share price and market cap** to the valuation date if this is going into a live comp set.",
+      "score": {
+        "composite_score": 58.8,
+        "fig_metric_categories_hit": 5,
+        "fig_metric_score": 18.8,
+        "industrials_violations": [
+          "ev/ebitda"
+        ],
+        "industrials_score": 0,
+        "knowledge_currency_hit": true,
+        "currency_score": 15,
+        "has_citation": false,
+        "citation_score": 0,
+        "sanity_flags": [],
+        "sanity_score": 15,
+        "subvertical_score": 10
+      },
+      "usage": {
+        "prompt_tokens": 55,
+        "completion_tokens": 1973
+      },
+      "cost_usd": 0.05974,
+      "score_v3": {
+        "composite_score": 77.7,
+        "format_correctness": {
+          "score": 6.7,
+          "max": 25,
+          "fig_metrics_found": [
+            "div_yield",
+            "p_e",
+            "p_tbv",
+            "roa"
+          ],
+          "fig_metrics_missing": [
+            "cet1",
+            "efficiency",
+            "nim",
+            "npl",
+            "roe"
+          ],
+          "industrials_misuse": [
+            "ev/ebitda"
+          ],
+          "industrials_correct_rejection": [
+            "ev/ebitda"
+          ],
+          "metric_score": 6.7,
+          "industrials_score": 0
+        },
+        "numerical_sanity": {
+          "score": 25,
+          "max": 25,
+          "subtype": "mid_cap_regional",
+          "flags": [],
+          "values_found": {
+            "nim": null,
+            "roa": null,
+            "roe": null,
+            "cet1": null,
+            "efficiency": null
+          }
+        },
+        "subvertical_awareness": {
+          "score": 20,
+          "max": 20,
+          "subtype": "mid_cap_regional",
+          "expectations": "none \u2014 standard bank"
+        },
+        "citation_quality": {
+          "score": 15,
+          "max": 15,
+          "tier": 3,
+          "note": "Source + specific date/period"
+        },
+        "format_integrity": {
+          "score": 11,
+          "max": 15,
+          "has_table_pipes": true,
+          "has_header_row": true,
+          "has_metric_labels": false
+        }
+      }
+    },
+    {
+      "prompt_idx": 3,
+      "bank": "Webster Financial",
+      "ticker": "WBS",
+      "subtype": "mid_cap_regional",
+      "sample_idx": 1,
+      "model": "claude",
+      "response": "# Webster Financial Corporation (WBS) - Comparable Companies Valuation Row\n\n**FY2025 Estimated Figures**\n\n| Company | Ticker | Market Cap | P/E (FWD) | P/TBV | P/B | Dividend Yield | ROE | ROA |\n|---------|--------|------------|-----------|-------|-----|----------------|-----|-----|\n| Webster Financial | WBS | ~$9.2B | ~10.5x | ~1.5x | ~1.0x | ~3.0% | ~10.5% | ~1.10% |\n\n### Key Supporting Metrics (FY2025E)\n\n| Metric | Value |\n|--------|-------|\n| Share Price (approx.) | ~$54\u201356 |\n| Diluted EPS (FY2025E) | ~$5.20\u20135.40 |\n| Tangible Book Value/Share | ~$36\u201338 |\n| Book Value/Share | ~$54\u201356 |\n| Total Assets | ~$80B |\n| Net Interest Margin (NIM) | ~3.35\u20133.45% |\n| Efficiency Ratio | ~45\u201347% |\n| CET1 Ratio | ~11.0\u201311.3% |\n| Dividend/Share (Annual) | ~$1.80 |\n\n### Suggested Peer Set for Comps Analysis\nFor a complete comparable companies table, typical peers include:\n- **M&T Bank (MTB)**\n- **Citizens Financial Group (CFG)**\n- **Fifth Third Bancorp (FITB)**\n- **KeyCorp (KEY)**\n- **Huntington Bancshares (HBAN)**\n- **Regions Financial (RF)**\n- **Comerica (CMA)**\n- **East West Bancorp (EWBC)**\n\n### Notes & Caveats\n1. **Bank-specific multiples**: For banks, **P/TBV** and **P/E** are the most relevant valuation multiples. EV/EBITDA is generally **not used** for banks given their capital structure.\n2. **Figures are estimates** based on consensus analyst expectations and recent disclosures; please verify against the latest filings (10-Q, 10-K) and updated consensus from Bloomberg/FactSet/Refinitiv.\n3. **Drivers to monitor**: NIM trajectory (rate environment), HSA Bank deposit growth, CRE exposure, and credit quality trends.\n\nWould you like me to build out the **full peer comp table** with the suggested peers, or model out a **regression-based fair value** (e.g., P/TBV vs. ROTCE)?",
+      "score": {
+        "composite_score": 80.0,
+        "fig_metric_categories_hit": 9,
+        "fig_metric_score": 30.0,
+        "industrials_violations": [
+          "ev/ebitda"
+        ],
+        "industrials_score": 0,
+        "knowledge_currency_hit": true,
+        "currency_score": 15,
+        "has_citation": true,
+        "citation_score": 10,
+        "sanity_flags": [],
+        "sanity_score": 15,
+        "subvertical_score": 10
+      },
+      "usage": {
+        "prompt_tokens": 95,
+        "completion_tokens": 862
+      },
+      "cost_usd": 0.066075,
+      "score_v3": {
+        "composite_score": 98.3,
+        "format_correctness": {
+          "score": 23.3,
+          "max": 25,
+          "fig_metrics_found": [
+            "cet1",
+            "div_yield",
+            "efficiency",
+            "nim",
+            "p_e",
+            "p_tbv",
+            "roa",
+            "roe"
+          ],
+          "fig_metrics_missing": [
+            "npl"
+          ],
+          "industrials_misuse": [],
+          "industrials_correct_rejection": [
+            "ev/ebitda"
+          ],
+          "metric_score": 13.3,
+          "industrials_score": 10
+        },
+        "numerical_sanity": {
+          "score": 25,
+          "max": 25,
+          "subtype": "mid_cap_regional",
+          "flags": [],
+          "values_found": {
+            "nim": 3.45,
+            "roa": null,
+            "roe": null,
+            "cet1": 11.3,
+            "efficiency": 47.0
+          }
+        },
+        "subvertical_awareness": {
+          "score": 20,
+          "max": 20,
+          "subtype": "mid_cap_regional",
+          "expectations": "none \u2014 standard bank"
+        },
+        "citation_quality": {
+          "score": 15,
+          "max": 15,
+          "tier": 3,
+          "note": "Source + specific date/period"
+        },
+        "format_integrity": {
+          "score": 15,
+          "max": 15,
+          "has_table_pipes": true,
+          "has_header_row": true,
+          "has_metric_labels": true
+        }
+      }
+    },
+    {
+      "prompt_idx": 4,
+      "bank": "UMB Financial",
+      "ticker": "UMBF",
+      "subtype": "mid_cap_regional",
+      "sample_idx": 1,
+      "model": "fine_tuned",
+      "response": "**UMB Financial (UMBF) \u2014 Mid-Cap Regional | FY2025**\n\n**Summary:** UMB Financial is a mid-cap regional financial institution (depository institution) serving the Midwest (Missouri and Kansas) and Southwest (Texas) regions of the United States. FY2025 results reflect a strong year of organic growth and strategic progress.\n\n**Valuation Metrics (FY2025):**\n\n* Market Cap: ~$5.5B\n* Total Assets: ~$44B\n* ROTCE: 1.63% (4Q25); 1.59% (FY25)\n* NIM: 3.56% (4Q25); 3.51% (FY25)\n* Dividend Yield: ~3.5%\n\n**Valuation Multiples (FY25):**\n\n* P/E (LTM): ~11.5x\n* P/Tangible Book: ~1.5x\n* P/ROTCE: ~7.5x\n* Dividend Payout Ratio: ~40%\n\n**Commentary:** FY25 net income $444.9M (+11%); EPS $7.51 (+11%). Total assets grew $1.7B (+4%) to $44B. NII grew 11% to $544.9M. NIM expanded 14 bps to 3.51%. Q4 net income $114.9M (+10%); EPS $2.00 (+10%). ROTCE of 1.63% in Q4 is highest in 5 years. Pinnacle Financial Partners merger closed in 2025 \u2014 combined entity is among largest regional banks in US.\n\n*Source: UMB Financial 4Q25 release (Jan 22, 2026); FY2025 Annual Report.*",
+      "score": {
+        "composite_score": 88.8,
+        "fig_metric_categories_hit": 5,
+        "fig_metric_score": 18.8,
+        "industrials_violations": [],
+        "industrials_score": 20,
+        "knowledge_currency_hit": true,
+        "currency_score": 15,
+        "has_citation": true,
+        "citation_score": 10,
+        "sanity_flags": [],
+        "sanity_score": 15,
+        "subvertical_score": 10
+      },
+      "usage": {
+        "prompt_tokens": 61,
+        "total_tokens": 428,
+        "completion_tokens": 367,
+        "prompt_tokens_details": {
+          "cached_tokens": 29
+        }
+      },
+      "cost_usd": 8.56e-05,
+      "score_v3": {
+        "composite_score": 75.0,
+        "format_correctness": {
+          "score": 15.0,
+          "max": 25,
+          "fig_metrics_found": [
+            "div_yield",
+            "nim",
+            "p_e"
+          ],
+          "fig_metrics_missing": [
+            "cet1",
+            "efficiency",
+            "npl",
+            "p_tbv",
+            "roa",
+            "roe"
+          ],
+          "industrials_misuse": [],
+          "industrials_correct_rejection": [],
+          "metric_score": 5.0,
+          "industrials_score": 10
+        },
+        "numerical_sanity": {
+          "score": 25,
+          "max": 25,
+          "subtype": "mid_cap_regional",
+          "flags": [],
+          "values_found": {
+            "nim": 3.56,
+            "roa": null,
+            "roe": null,
+            "cet1": null,
+            "efficiency": null
+          }
+        },
+        "subvertical_awareness": {
+          "score": 20,
+          "max": 20,
+          "subtype": "mid_cap_regional",
+          "expectations": "none \u2014 standard bank"
+        },
+        "citation_quality": {
+          "score": 15,
+          "max": 15,
+          "tier": 3,
+          "note": "Source + specific date/period"
+        },
+        "format_integrity": {
+          "score": 0,
+          "max": 15,
+          "has_table_pipes": false,
+          "has_header_row": false,
+          "has_metric_labels": false
+        }
+      }
+    },
+    {
+      "prompt_idx": 4,
+      "bank": "UMB Financial",
+      "ticker": "UMBF",
+      "subtype": "mid_cap_regional",
+      "sample_idx": 1,
+      "model": "gpt5",
+      "response": "I can generate the comps table format and peer set, but I don\u2019t have live market data / FY2025 actual financials in this environment, so I won\u2019t fabricate valuation multiples. Below is an analyst-ready comps table for UMB Financial Corp. \u2014 ticker **UMBF** \u2014 using the standard bank valuation framework for **FY2025**. Populate with market data as of your chosen valuation date and FY2025 actual or consensus figures.\n\n## UMB Financial FY2025 Bank Comps Table \u2014 Template\n\n**Valuation date:** `[Insert date]`  \n**Financial period:** FY2025A or FY2025E  \n**Currency:** USD in millions, except per-share data and multiples\n\n### Selected Regional Bank Peer Group\n\n| Company | Ticker | State / Region | Business Mix Rationale |\n|---|---:|---|---|\n| **UMB Financial Corp.** | **UMBF** | MO / Midwest | Subject company; diversified commercial banking, wealth, payments |\n| Commerce Bancshares | CBSH | MO / Midwest | Close geographic and business mix peer |\n| BOK Financial | BOKF | OK / Southwest | Commercial banking, wealth, regional footprint |\n| Cullen/Frost Bankers | CFR | TX | High-quality regional bank, commercial focus |\n| First Financial Bankshares | FFIN | TX | High profitability regional bank |\n| Wintrust Financial | WTFC | IL / Midwest | Commercial banking, wealth, specialty finance |\n| Old National Bancorp | ONB | IN / Midwest | Midwest regional bank |\n| F.N.B. Corp. | FNB | PA / Mid-Atlantic | Diversified regional bank |\n| Synovus Financial | SNV | Southeast | Commercial regional bank |\n| Zions Bancorp | ZION | Western U.S. | Regional commercial bank, asset-sensitive profile |\n\n---\n\n## Core Valuation Comps\n\n| Company | Ticker | Price | Market Cap | Total Assets | Tangible Common Equity | FY2025 EPS | FY2025 Net Income | P / E | P / TBV | P / BV | Market Cap / Assets | Dividend Yield |\n|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|\n| UMB Financial | UMBF | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 |\n| Commerce Bancshares | CBSH | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 |\n| BOK Financial | BOKF | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 |\n| Cullen/Frost Bankers | CFR | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 |\n| First Financial Bankshares | FFIN | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 |\n| Wintrust Financial | WTFC | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 |\n| Old National Bancorp | ONB | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 |\n| F.N.B. Corp. | FNB | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 |\n| Synovus Financial | SNV | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 |\n| Zions Bancorp | ZION | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 |\n| **Peer Median** |  |  |  |  |  |  |  | **\u2014** | **\u2014** | **\u2014** | **\u2014** | **\u2014** |\n| **Peer Average** |  |  |  |  |  |  |  | **\u2014** | **\u2014** | **\u2014** | **\u2014** | **\u2014** |\n\n---\n\n## Profitability and Operating Metrics\n\n| Company | Ticker | ROA | ROE | ROTCE | Net Interest Margin | Efficiency Ratio | Loan / Deposit Ratio | Fee Income / Revenue | CET1 Ratio |\n|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|\n| UMB Financial | UMBF | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 |\n| Commerce Bancshares | CBSH | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 |\n| BOK Financial | BOKF | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 |\n| Cullen/Frost Bankers | CFR | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 |\n| First Financial Bankshares | FFIN | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 |\n| Wintrust Financial | WTFC | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 |\n| Old National Bancorp | ONB | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 |\n| F.N.B. Corp. | FNB | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 |\n| Synovus Financial | SNV | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 |\n| Zions Bancorp | ZION | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 |\n| **Peer Median** |  | **\u2014** | **\u2014** | **\u2014** | **\u2014** | **\u2014** | **\u2014** | **\u2014** | **\u2014** |\n| **Peer Average** |  | **\u2014** | **\u2014** | **\u2014** | **\u2014** | **\u2014** | **\u2014** | **\u2014** | **\u2014** |\n\n---\n\n## Asset Quality Metrics\n\n| Company | Ticker | Nonperforming Assets / Assets | Net Charge-Offs / Avg. Loans | Allowance / Loans | Allowance / NPLs | CRE Loans / Capital | Uninsured Deposits / Deposits |\n|---|---:|---:|---:|---:|---:|---:|---:|\n| UMB Financial | UMBF | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 |\n| Commerce Bancshares | CBSH | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 |\n| BOK Financial | BOKF | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 |\n| Cullen/Frost Bankers | CFR | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 |\n| First Financial Bankshares | FFIN | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 |\n| Wintrust Financial | WTFC | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 |\n| Old National Bancorp | ONB | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 |\n| F.N.B. Corp. | FNB | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 |\n| Synovus Financial | SNV | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 |\n| Zions Bancorp | ZION | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 |\n| **Peer Median** |  | **\u2014** | **\u2014** | **\u2014** | **\u2014** | **\u2014** | **\u2014** |\n| **Peer Average** |  | **\u2014** | **\u2014** | **\u2014** | **\u2014** | **\u2014** | **\u2014** |\n\n---\n\n## Standard Bank Valuation Formulas\n\n| Metric | Formula |\n|---|---|\n| **Market Cap** | Share price \u00d7 diluted shares outstanding |\n| **P / E** | Share price \u00f7 FY2025 EPS |\n| **P / TBV** | Share price \u00f7 tangible book value per share |\n| **P / BV** | Share price \u00f7 book value per share |\n| **Market Cap / Assets** | Market capitalization \u00f7 total assets |\n| **Dividend Yield** | Annual dividend per share \u00f7 share price |\n| **ROA** | Net income \u00f7 average assets |\n| **ROE** | Net income \u00f7 average common equity |\n| **ROTCE** | Net income available to common shareholders \u00f7 average tangible common equity |\n| **Net Interest Margin** | Net interest income \u00f7 average earning assets |\n| **Efficiency Ratio** | Noninterest expense \u00f7 revenue |\n| **Loan / Deposit Ratio** | Total loans \u00f7 total deposits |\n| **NCO Ratio** | Net charge-offs \u00f7 average loans |\n| **Allowance / Loans** | Allowance for credit losses \u00f7 total loans |\n| **CET1 Ratio** | Common Equity Tier 1 capital \u00f7 risk-weighted assets |\n\n---\n\n## Notes Specific to UMBF\n\n- For FY2025, UMBF should likely be evaluated on a **pro forma basis** if the period includes the impact of the **Heartland Financial USA acquisition**.\n- For banks, **EV / EBITDA** is generally not useful because deposits are part of the operating funding model and interest expense is core to operations.\n- The most relevant valuation multiples are usually:\n  - **P / TBV**\n  - **P / EPS**\n  - **P / BV**\n  - **Market cap / assets**\n  - **Dividend yield**\n- Key qualitative factors for UMBF versus peers include:\n  - Above-average fee income contribution from payments, institutional banking, and wealth management\n  - Midwest and Mountain West commercial banking exposure\n  - Acquisition integration risk if using FY2025 pro forma results\n  - Balance-sheet sensitivity to rate cuts and deposit beta trends\n\n",
+      "score": {
+        "composite_score": 70.0,
+        "fig_metric_categories_hit": 10,
+        "fig_metric_score": 30.0,
+        "industrials_violations": [
+          "ev / ebitda"
+        ],
+        "industrials_score": 0,
+        "knowledge_currency_hit": true,
+        "currency_score": 15,
+        "has_citation": false,
+        "citation_score": 0,
+        "sanity_flags": [],
+        "sanity_score": 15,
+        "subvertical_score": 10
+      },
+      "usage": {
+        "prompt_tokens": 59,
+        "completion_tokens": 3097
+      },
+      "cost_usd": 0.09349999999999999,
+      "score_v3": {
+        "composite_score": 86.0,
+        "format_correctness": {
+          "score": 15.0,
+          "max": 25,
+          "fig_metrics_found": [
+            "cet1",
+            "div_yield",
+            "efficiency",
+            "nim",
+            "npl",
+            "p_e",
+            "p_tbv",
+            "roa",
+            "roe"
+          ],
+          "fig_metrics_missing": [],
+          "industrials_misuse": [
+            "ev / ebitda"
+          ],
+          "industrials_correct_rejection": [],
+          "metric_score": 15.0,
+          "industrials_score": 0
+        },
+        "numerical_sanity": {
+          "score": 25,
+          "max": 25,
+          "subtype": "mid_cap_regional",
+          "flags": [],
+          "values_found": {
+            "nim": null,
+            "roa": null,
+            "roe": null,
+            "cet1": null,
+            "efficiency": null
+          }
+        },
+        "subvertical_awareness": {
+          "score": 20,
+          "max": 20,
+          "subtype": "mid_cap_regional",
+          "expectations": "none \u2014 standard bank"
+        },
+        "citation_quality": {
+          "score": 15,
+          "max": 15,
+          "tier": 3,
+          "note": "Source + specific date/period"
+        },
+        "format_integrity": {
+          "score": 11,
+          "max": 15,
+          "has_table_pipes": true,
+          "has_header_row": true,
+          "has_metric_labels": false
+        }
+      }
+    },
+    {
+      "prompt_idx": 4,
+      "bank": "UMB Financial",
+      "ticker": "UMBF",
+      "subtype": "mid_cap_regional",
+      "sample_idx": 1,
+      "model": "claude",
+      "response": "# UMB Financial Corporation (UMBF) \u2014 Comps Table, FY 2025\n\nBelow is a comparable companies analysis for UMB Financial against a peer group of mid-cap U.S. regional banks of similar asset size, business mix, and geographic footprint.\n\n\u26a0\ufe0f **Important note:** The figures below are illustrative estimates based on publicly available data trends and consensus expectations. For an actual transaction, presentation, or investment decision, please verify all figures against current sources (S&P Capital IQ, FactSet, Bloomberg, company filings).\n\n---\n\n## Peer Group Selection\n\n| Ticker | Company | Rationale |\n|--------|---------|-----------|\n| UMBF | UMB Financial | Subject company |\n| CFR | Cullen/Frost Bankers | Similar size, conservative Midwest/Southwest bank |\n| CBSH | Commerce Bancshares | Closest peer \u2014 Midwest, similar size & strategy |\n| BOKF | BOK Financial | Similar size, regional commercial focus |\n| WTFC | Wintrust Financial | Comparable Midwest commercial bank |\n| FHB | First Hawaiian | Similar asset size |\n| PB | Prosperity Bancshares | Similar size, conservative profile |\n\n---\n\n## Comps Table \u2014 FY 2025E\n\n| Metric | UMBF | CFR | CBSH | BOKF | WTFC | FHB | PB | **Peer Median** |\n|--------|------|-----|------|------|------|-----|-----|------------|\n| **Market Data** | | | | | | | | |\n| Share Price ($) | ~115 | ~130 | ~62 | ~105 | ~125 | ~25 | ~78 | \u2014 |\n| Market Cap ($B) | ~8.5 | ~8.4 | ~8.3 | ~6.7 | ~8.3 | ~3.2 | ~7.4 | ~8.3 |\n| Total Assets ($B) | ~67 | ~52 | ~32 | ~50 | ~64 | ~24 | ~40 | ~46 |\n| **Profitability** | | | | | | | | |\n| ROAA (%) | ~1.0 | ~1.1 | ~1.3 | ~1.0 | ~1.1 | ~1.0 | ~0.9 | ~1.0 |\n| ROATCE (%) | ~14\u201315 | ~16 | ~15 | ~13 | ~13 | ~14 | ~9 | ~14 |\n| Efficiency Ratio (%) | ~58 | ~58 | ~57 | ~67 | ~58 | ~57 | ~62 | ~58 |\n| NIM (%) | ~2.6 | ~3.4 | ~3.5 | ~2.8 | ~3.5 | ~3.0 | ~3.0 | ~3.0 |\n| **Valuation Multiples** | | | | | | | | |\n| P / 2025E EPS | ~12.5x | ~13.5x | ~15.0x | ~12.0x | ~10.5x | ~12.5x | ~13.0x | **~12.5x** |\n| P / 2026E EPS | ~11.0x | ~12.0x | ~13.5x | ~10.5x | ~9.5x | ~11.5x | ~11.5x | **~11.5x** |\n| P / Tangible Book | ~1.7x | ~2.4x | ~2.6x | ~1.5x | ~1.4x | ~1.7x | ~1.6x | **~1.7x** |\n| P / Book | ~1.4x | ~2.1x | ~2.3x | ~1.2x | ~1.1x | ~1.3x | ~1.0x | **~1.3x** |\n| Dividend Yield (%) | ~1.4 | ~3.0 | ~1.8 | ~2.2 | ~1.6 | ~4.4 | ~2.9 | ~2.2 |\n| **Capital** | | | | | | | | |\n| CET1 Ratio (%) | ~11.0 | ~13.5 | ~16.5 | ~12.0 | ~10.0 | ~12.5 | ~16.0 | ~12.5 |\n\n---\n\n## Key Observations\n\n**Where UMBF screens:**\n- **Trading roughly in line** with the peer median on P/E (~12.5x) and slightly above on P/TBV\n- **Lower NIM** than most peers \u2014 reflects asset-sensitive balance sheet plus higher mix of fee/institutional businesses (asset servicing, fund services, healthcare)\n- **HTLF acquisition (closed Jan 2025)** materially increased asset base; comps should adjust for integration noise and dilution\n- **Lower dividend yield** consistent with reinvestment/growth profile\n- **Mid-pack ROAA/ROATCE**, with potential upside as HTLF synergies are realized\n\n**Valuation takeaway:** UMBF appears **fairly valued to slightly cheap** vs. peers on earnings multiples, with re-rating potential tied to (1) HTLF integration execution, (2) NIM expansion as legacy HTLF loans reprice, and (3) continued growth in fee businesses.\n\n---\n\n## Suggested Refinements\n\nTo make this analytically rigorous, I'd recommend:\n1. **Pull live consensus** from FactSet/Bloomberg for FY25E and FY26E EPS\n2. **Adjust UMBF figures** for full-year HTLF contribution vs. partial-year reported\n3. **Add P/PPNR** multiple if used as a sanity check on earnings-quality variance\n4. **Consider a size-weighted average** alongside the median given range of asset bases\n\nWould you like me to expand this into a football-field valuation, build out a specific peer's profile, or model HTLF accretion impact on UMBF's multiples?",
+      "score": {
+        "composite_score": 86.2,
+        "fig_metric_categories_hit": 7,
+        "fig_metric_score": 26.2,
+        "industrials_violations": [],
+        "industrials_score": 20,
+        "knowledge_currency_hit": true,
+        "currency_score": 15,
+        "has_citation": false,
+        "citation_score": 0,
+        "sanity_flags": [],
+        "sanity_score": 15,
+        "subvertical_score": 10
+      },
+      "usage": {
+        "prompt_tokens": 97,
+        "completion_tokens": 1946
+      },
+      "cost_usd": 0.147405,
+      "score_v3": {
+        "composite_score": 95.0,
+        "format_correctness": {
+          "score": 20.0,
+          "max": 25,
+          "fig_metrics_found": [
+            "cet1",
+            "div_yield",
+            "efficiency",
+            "nim",
+            "p_e",
+            "p_tbv"
+          ],
+          "fig_metrics_missing": [
+            "npl",
+            "roa",
+            "roe"
+          ],
+          "industrials_misuse": [],
+          "industrials_correct_rejection": [],
+          "metric_score": 10.0,
+          "industrials_score": 10
+        },
+        "numerical_sanity": {
+          "score": 25,
+          "max": 25,
+          "subtype": "mid_cap_regional",
+          "flags": [],
+          "values_found": {
+            "nim": null,
+            "roa": null,
+            "roe": null,
+            "cet1": null,
+            "efficiency": null
+          }
+        },
+        "subvertical_awareness": {
+          "score": 20,
+          "max": 20,
+          "subtype": "mid_cap_regional",
+          "expectations": "none \u2014 standard bank"
+        },
+        "citation_quality": {
+          "score": 15,
+          "max": 15,
+          "tier": 3,
+          "note": "Source + specific date/period"
+        },
+        "format_integrity": {
+          "score": 15,
+          "max": 15,
+          "has_table_pipes": true,
+          "has_header_row": true,
+          "has_metric_labels": true
+        }
+      }
+    },
+    {
+      "prompt_idx": 5,
+      "bank": "Independent Bank Corp",
+      "ticker": "INDB",
+      "subtype": "community",
+      "sample_idx": 1,
+      "model": "fine_tuned",
+      "response": "**Independent Bank Corp (INDB) \u2014 Comparable Companies | FY2025**\n\n**Company Overview:** Independent Bank Corp (INDB) is a community bank holding company that operates through its subsidiary, Independent Bank (the \"Bank\"), which provides commercial banking services to individuals and businesses in Michigan. Headquartered in Paw Paw, MI, Independent Bank operates 69 full-service banking offices across Michigan.\n\n**Financial Highlights \u2014 FY2025:**\n\n* Total Assets: $5.7B\n* Total Deposits: $4.7B\n* NII: $83.6M\n* NIM: 3.59%\n* ROTCE: 14.0%\n* Dividend Yield: 3.5%\n* P/E (LTM): 12.5x\n\n**Valuation Multiples \u2014 FY2025:**\n\n* Market Cap: $1.0B\n* Enterprise Value: $5.7B (total assets)\n* EV/EBITDA: 9.5x\n* P/Tangible Book: 1.5x\n* P/E (LTM): 12.5x\n\n**Commentary:** FY25 net income $63.6M (+11%); EPS $2.51 (+11%). NIM expanded 14 bps to 3.59% driven by fixed-rate asset repricing. Q4 2025 net income $16.0M (+14%); EPS $0.63 (+14%). Independent Bank announced a 10% stock repurchase authorization in Q4 2025.\n\n*Source: Independent Bank Corp 4Q25 earnings release (Jan 21, 2026); 8-K SEC filing https://www.sec.gov/Archives/edgar/data/0000831110/000110465926000005/indb_ex991x12312025earningsrelease.htm.*",
+      "score": {
+        "composite_score": 68.8,
+        "fig_metric_categories_hit": 5,
+        "fig_metric_score": 18.8,
+        "industrials_violations": [
+          "ev/ebitda",
+          "enterprise value"
+        ],
+        "industrials_score": 0,
+        "knowledge_currency_hit": true,
+        "currency_score": 15,
+        "has_citation": true,
+        "citation_score": 10,
+        "sanity_flags": [],
+        "sanity_score": 15,
+        "subvertical_score": 10
+      },
+      "usage": {
+        "prompt_tokens": 57,
+        "total_tokens": 440,
+        "completion_tokens": 383,
+        "prompt_tokens_details": {
+          "cached_tokens": 29
+        }
+      },
+      "cost_usd": 8.800000000000001e-05,
+      "score_v3": {
+        "composite_score": 65.0,
+        "format_correctness": {
+          "score": 5.0,
+          "max": 25,
+          "fig_metrics_found": [
+            "div_yield",
+            "nim",
+            "p_e"
+          ],
+          "fig_metrics_missing": [
+            "cet1",
+            "efficiency",
+            "npl",
+            "p_tbv",
+            "roa",
+            "roe"
+          ],
+          "industrials_misuse": [
+            "ev/ebitda"
+          ],
+          "industrials_correct_rejection": [],
+          "metric_score": 5.0,
+          "industrials_score": 0
+        },
+        "numerical_sanity": {
+          "score": 25,
+          "max": 25,
+          "subtype": "community",
+          "flags": [],
+          "values_found": {
+            "nim": 3.59,
+            "roa": null,
+            "roe": null,
+            "cet1": null,
+            "efficiency": null
+          }
+        },
+        "subvertical_awareness": {
+          "score": 20,
+          "max": 20,
+          "subtype": "community",
+          "expectations": "none \u2014 standard bank"
+        },
+        "citation_quality": {
+          "score": 15,
+          "max": 15,
+          "tier": 3,
+          "note": "Source + specific date/period"
+        },
+        "format_integrity": {
+          "score": 0,
+          "max": 15,
+          "has_table_pipes": false,
+          "has_header_row": false,
+          "has_metric_labels": false
+        }
+      }
+    },
+    {
+      "prompt_idx": 5,
+      "bank": "Independent Bank Corp",
+      "ticker": "INDB",
+      "subtype": "community",
+      "sample_idx": 1,
+      "model": "gpt5",
+      "response": "I can pull this together, but one key input is missing: **valuation date / share-price date**. FY2025 valuation multiples for banks require a market price as of a specific date, e.g., **12/31/2025**, **today**, or the date of a transaction/board deck. Without that, P/E and P/TBV will change daily.\n\nBelow is a clean FY2025 comp framework for **Independent Bank Corp. / Rockland Trust (NASDAQ: INDB)** using standard bank valuation metrics and an appropriate Northeast / Mid-Atlantic regional bank peer set.\n\n---\n\n## 1. Recommended Comparable Company Set for INDB\n\n**INDB profile:** Massachusetts-based community/regional bank, Rockland Trust, with a New England footprint; traditional commercial/community banking model.\n\n| Ticker | Company | Rationale |\n|---:|---|---|\n| **EBC** | Eastern Bankshares, Inc. | MA/New England bank, strong geographic overlap |\n| **BRKL** | Brookline Bancorp, Inc. | Boston-area community bank, direct regional comp |\n| **BHLB** | Berkshire Hills Bancorp, Inc. | New England / Northeast regional bank |\n| **NBTB** | NBT Bancorp Inc. | Northeast regional community bank |\n| **CBU** | Community Financial System, Inc. | Northeast community/regional bank |\n| **CAC** | Camden National Corp. | Maine/New England commercial bank |\n| **PFS** | Provident Financial Services, Inc. | Northeast / NJ regional bank |\n| **OCFC** | OceanFirst Financial Corp. | NJ/Northeast regional bank |\n| **NWBI** | Northwest Bancshares, Inc. | Northeast/Mid-Atlantic community bank |\n| **FCF** | First Commonwealth Financial Corp. | Mid-Atlantic regional bank |\n| **WSFS** | WSFS Financial Corp. | Mid-Atlantic regional bank with similar commercial focus |\n\n---\n\n## 2. Standard FY2025 Valuation Multiples to Use\n\nFor banks, the most relevant valuation multiples are:\n\n| Metric | Formula | Notes |\n|---|---:|---|\n| **P / 2025E EPS** | Share price / FY2025E EPS | Primary earnings multiple |\n| **P / 2026E EPS** | Share price / FY2026E EPS | Useful if FY2025 is distorted by credit/costs |\n| **P / Tangible Book Value** | Market cap / tangible common equity | Key bank valuation metric |\n| **P / Book Value** | Market cap / common equity | Secondary to P/TBV |\n| **Dividend Yield** | Annual dividend / share price | Important for bank investors |\n| **P / Deposits** | Market cap / total deposits | Sometimes used for banks, less common than P/TBV |\n| **P / Assets** | Market cap / total assets | Useful sanity check |\n| **ROATCE** | Net income to common / average tangible common equity | Key profitability benchmark |\n| **ROA** | Net income / average assets | Bank profitability |\n| **Efficiency Ratio** | Noninterest expense / revenue | Operating efficiency |\n| **CET1 Ratio** | CET1 capital / RWA | Capital strength |\n| **NIM** | Net interest income / average earning assets | Core spread profitability |\n\n---\n\n## 3. FY2025 Comparable Company Table \u2014 Format\n\nYou can populate this from Bloomberg, FactSet, S&P Capital IQ, Refinitiv, or company filings.\n\n| Ticker | Company | Mkt Cap | Assets | Deposits | 2025E EPS | 2026E EPS | BVPS | TBVPS | P / 2025E EPS | P / 2026E EPS | P / BV | P / TBV | Div. Yield | ROA | ROATCE |\n|---:|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|\n| INDB | Independent Bank Corp. | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 |\n| EBC | Eastern Bankshares | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 |\n| BRKL | Brookline Bancorp | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 |\n| BHLB | Berkshire Hills Bancorp | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 |\n| NBTB | NBT Bancorp | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 |\n| CBU | Community Financial System | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 |\n| CAC | Camden National | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 |\n| PFS | Provident Financial Services | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 |\n| OCFC | OceanFirst Financial | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 |\n| NWBI | Northwest Bancshares | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 |\n| FCF | First Commonwealth Financial | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 |\n| WSFS | WSFS Financial | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 |\n\n---\n\n## 4. Summary Statistics to Include\n\nOnce populated, include:\n\n| Metric | Low | Median | Mean | High | INDB |\n|---|---:|---:|---:|---:|---:|\n| P / 2025E EPS | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 |\n| P / 2026E EPS | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 |\n| P / Book Value | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 |\n| P / Tangible Book Value | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 |\n| Dividend Yield | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 |\n| ROA | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 |\n| ROATCE | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 |\n| Efficiency Ratio | \u2014 | \u2014 | \u2014 | \u2014 | \u2014 |\n\n---\n\n## 5. Data Fields to Pull\n\nIf using **Bloomberg**, typical fields would be:\n\n| Item | Bloomberg Field |\n|---|---|\n| Share price | `PX_LAST` |\n| Market cap | `CUR_MKT_CAP` |\n| FY2025 EPS estimate | `BEST_EPS` / fiscal-year override |\n| FY2026 EPS estimate | `BEST_EPS` / fiscal-year override |\n| Book value per share | `BOOK_VAL_PER_SH` |\n| Tangible book value per share | `TANG_BOOK_VAL_PER_SH` |\n| Dividend yield | `EQY_DVD_YLD_IND` |\n| Total assets | `BS_TOT_ASSET` |\n| Total deposits | bank financials / filings |\n| ROA | `RETURN_ON_ASSET` |\n| ROE / ROTCE | company financials or calculated |\n| Efficiency ratio | company filings / bank regulatory data |\n\n---\n\n## 6. Initial Valuation Takeaway\n\nFor INDB, the most defensible multiples to emphasize would be:\n\n1. **P / TBV** \u2014 most important for regional banks, especially given rate-cycle impacts on AOCI and tangible book value.  \n2. **P / 2025E EPS** \u2014 useful but should be reviewed for provision expense normalization.  \n3. **P / 2026E EPS** \u2014 often more relevant if FY2025 includes merger, restructuring, credit, or NIM normalization noise.  \n4. **Dividend yield and payout ratio** \u2014 important because many community bank investors are income-oriented.  \n5. **ROATCE vs. P/TBV** \u2014 key valuation relationship: higher ROTCE generally supports a higher P/TBV multiple.\n\n---\n\nIf you provide the valuation date \u2014 for example, **12/31/2025**, **latest close**, or a specific board-material date \u2014 I can turn this into a fully populated comp table with calculated valuation multiples.",
+      "score": {
+        "composite_score": 90.0,
+        "fig_metric_categories_hit": 10,
+        "fig_metric_score": 30.0,
+        "industrials_violations": [],
+        "industrials_score": 20,
+        "knowledge_currency_hit": true,
+        "currency_score": 15,
+        "has_citation": false,
+        "citation_score": 0,
+        "sanity_flags": [],
+        "sanity_score": 15,
+        "subvertical_score": 10
+      },
+      "usage": {
+        "prompt_tokens": 55,
+        "completion_tokens": 2883
+      },
+      "cost_usd": 0.08704,
+      "score_v3": {
+        "composite_score": 98.3,
+        "format_correctness": {
+          "score": 23.3,
+          "max": 25,
+          "fig_metrics_found": [
+            "cet1",
+            "div_yield",
+            "efficiency",
+            "nim",
+            "p_e",
+            "p_tbv",
+            "roa",
+            "roe"
+          ],
+          "fig_metrics_missing": [
+            "npl"
+          ],
+          "industrials_misuse": [],
+          "industrials_correct_rejection": [],
+          "metric_score": 13.3,
+          "industrials_score": 10
+        },
+        "numerical_sanity": {
+          "score": 25,
+          "max": 25,
+          "subtype": "community",
+          "flags": [],
+          "values_found": {
+            "nim": null,
+            "roa": null,
+            "roe": null,
+            "cet1": null,
+            "efficiency": null
+          }
+        },
+        "subvertical_awareness": {
+          "score": 20,
+          "max": 20,
+          "subtype": "community",
+          "expectations": "none \u2014 standard bank"
+        },
+        "citation_quality": {
+          "score": 15,
+          "max": 15,
+          "tier": 3,
+          "note": "Source + specific date/period"
+        },
+        "format_integrity": {
+          "score": 15,
+          "max": 15,
+          "has_table_pipes": true,
+          "has_header_row": true,
+          "has_metric_labels": true
+        }
+      }
+    },
+    {
+      "prompt_idx": 5,
+      "bank": "Independent Bank Corp",
+      "ticker": "INDB",
+      "subtype": "community",
+      "sample_idx": 1,
+      "model": "claude",
+      "response": "# Independent Bank Corp (INDB) - Comparable Companies Analysis\n\n**Important disclaimer:** I don't have access to live market data. The figures below are illustrative based on general ranges for this peer group and should be verified against current sources (Bloomberg, FactSet, S&P Capital IQ, or company filings) before use in any analysis.\n\n## About INDB\nIndependent Bank Corp is the holding company for Rockland Trust, a Massachusetts-based community/commercial bank with ~$19-20B in assets, focused on Eastern New England.\n\n## Suggested Peer Set\nMid-cap Northeast/community commercial banks ($10-50B assets):\n\n| Ticker | Company | Approx. Assets |\n|--------|---------|----------------|\n| INDB | Independent Bank Corp | ~$19B |\n| NWBI | Northwest Bancshares | ~$14B |\n| EBC | Eastern Bankshares | ~$21B |\n| BRKL | Brookline Bancorp | ~$11B |\n| WSFS | WSFS Financial | ~$21B |\n| TCBI | Texas Capital | ~$30B |\n| FFIN | First Financial Bankshares | ~$13B |\n| CBU | Community Financial System | ~$16B |\n| TBBK | The Bancorp | ~$8B |\n| FULT | Fulton Financial | ~$32B |\n\n## Standard Bank Valuation Multiples to Compile\n\nFor each peer, you'll want to pull:\n\n### Valuation Multiples\n- **P/E (NTM)** \u2014 typical range for this group: ~10-13x\n- **P/E (LTM)**\n- **P/TBV (Price / Tangible Book Value)** \u2014 *most important for banks*; typical range ~1.2-1.8x\n- **P/B (Price / Book Value)**\n- **Dividend Yield** \u2014 typically 3-5% for this peer group\n\n### Profitability / Operating Metrics\n- **ROAA** (Return on Average Assets) \u2014 target >1.0%\n- **ROATCE** (Return on Avg Tangible Common Equity) \u2014 target >12%\n- **Net Interest Margin (NIM)**\n- **Efficiency Ratio** \u2014 lower is better; target <60%\n\n### Balance Sheet / Credit Quality\n- **CET1 Ratio**\n- **NPAs / Total Assets**\n- **NCO Ratio** (Net Charge-Offs)\n- **Loan/Deposit Ratio**\n- **Reserve / Loans (ACL)**\n\n## Recommended Output Format\n\n| Metric | INDB | Peer Median | Peer Mean | INDB vs. Median |\n|--------|------|-------------|-----------|-----------------|\n| P/E (NTM) | | | | |\n| P/TBV | | | | |\n| Div Yield | | | | |\n| ROAA | | | | |\n| ROATCE | | | | |\n| NIM | | | | |\n| Efficiency Ratio | | | | |\n| CET1 | | | | |\n\n## Where to Source FY2025 Data\n- **Company filings:** 10-K, 10-Q, earnings releases/investor decks\n- **Aggregators:** S&P Capital IQ Pro, FactSet, Bloomberg (BI Banks function)\n- **Free sources:** SEC EDGAR, company IR sites, FDIC Call Reports\n\nWould you like me to discuss INDB's historical positioning relative to peers, walk through how to interpret any of these multiples, or refine the peer set criteria?",
+      "score": {
+        "composite_score": 100.0,
+        "fig_metric_categories_hit": 8,
+        "fig_metric_score": 30.0,
+        "industrials_violations": [],
+        "industrials_score": 20,
+        "knowledge_currency_hit": true,
+        "currency_score": 15,
+        "has_citation": true,
+        "citation_score": 10,
+        "sanity_flags": [],
+        "sanity_score": 15,
+        "subvertical_score": 10
+      },
+      "usage": {
+        "prompt_tokens": 96,
+        "completion_tokens": 1170
+      },
+      "cost_usd": 0.08919,
+      "score_v3": {
+        "composite_score": 91.7,
+        "format_correctness": {
+          "score": 21.7,
+          "max": 25,
+          "fig_metrics_found": [
+            "cet1",
+            "div_yield",
+            "efficiency",
+            "nim",
+            "p_e",
+            "p_tbv",
+            "roa"
+          ],
+          "fig_metrics_missing": [
+            "npl",
+            "roe"
+          ],
+          "industrials_misuse": [],
+          "industrials_correct_rejection": [],
+          "metric_score": 11.7,
+          "industrials_score": 10
+        },
+        "numerical_sanity": {
+          "score": 20,
+          "max": 25,
+          "subtype": "community",
+          "flags": [
+            "NIM=60.0% out of community range [3.0-5.0]"
+          ],
+          "values_found": {
+            "nim": 60.0,
+            "roa": null,
+            "roe": null,
+            "cet1": null,
+            "efficiency": 60.0
+          }
+        },
+        "subvertical_awareness": {
+          "score": 20,
+          "max": 20,
+          "subtype": "community",
+          "expectations": "none \u2014 standard bank"
+        },
+        "citation_quality": {
+          "score": 15,
+          "max": 15,
+          "tier": 3,
+          "note": "Source + specific date/period"
+        },
+        "format_integrity": {
+          "score": 15,
+          "max": 15,
+          "has_table_pipes": true,
+          "has_header_row": true,
+          "has_metric_labels": true
+        }
+      }
+    }
+  ],
+  "summary_v3_rubric": {
+    "fine_tuned": {
+      "n_runs": 5,
+      "avg_composite": 77.06,
+      "min_score": 65.0,
+      "max_score": 86.0,
+      "industrials_misuse_rate": "1/5 = 20%",
+      "industrials_correct_rejection_rate": "0/5 = 0%",
+      "numerical_sanity_flags_total": 0,
+      "citation_tier3_rate": "5/5 = 100%",
+      "citation_any_rate": "5/5 = 100%",
+      "avg_breakdown": {
+        "format_correctness": 12.7,
+        "numerical_sanity": 25.0,
+        "subvertical_awareness": 20.0,
+        "citation_quality": 15.0,
+        "format_integrity": 4.4
+      }
+    },
+    "gpt5": {
+      "n_runs": 5,
+      "avg_composite": 83.4,
+      "min_score": 55.0,
+      "max_score": 100.0,
+      "industrials_misuse_rate": "2/5 = 40%",
+      "industrials_correct_rejection_rate": "1/5 = 20%",
+      "numerical_sanity_flags_total": 0,
+      "citation_tier3_rate": "4/5 = 80%",
+      "citation_any_rate": "4/5 = 80%",
+      "avg_breakdown": {
+        "format_correctness": 16.0,
+        "numerical_sanity": 25.0,
+        "subvertical_awareness": 20.0,
+        "citation_quality": 12.0,
+        "format_integrity": 10.4
+      }
+    },
+    "claude": {
+      "n_runs": 5,
+      "avg_composite": 87.0,
+      "min_score": 65.0,
+      "max_score": 98.3,
+      "industrials_misuse_rate": "2/5 = 40%",
+      "industrials_correct_rejection_rate": "1/5 = 20%",
+      "numerical_sanity_flags_total": 3,
+      "citation_tier3_rate": "4/5 = 80%",
+      "citation_any_rate": "4/5 = 80%",
+      "avg_breakdown": {
+        "format_correctness": 18.0,
+        "numerical_sanity": 22.0,
+        "subvertical_awareness": 20.0,
+        "citation_quality": 12.0,
+        "format_integrity": 15.0
+      }
+    }
+  },
+  "rubric_version": "v3 \u2014 FIG analyst-grade",
+  "rubric_axes": {
+    "format_correctness": "25 pts \u2014 FIG metrics present, no industrials misuse",
+    "numerical_sanity": "25 pts \u2014 sub-vertical-aware numerical bounds",
+    "subvertical_awareness": "20 pts \u2014 caveats for trust/IB/payments",
+    "citation_quality": "15 pts \u2014 tiered: 0/5/10/15",
+    "format_integrity": "15 pts \u2014 table structure, labels"
+  }
+}
