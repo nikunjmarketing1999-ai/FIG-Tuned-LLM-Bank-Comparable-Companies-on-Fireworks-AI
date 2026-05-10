@@ -309,11 +309,9 @@ Any vertical where the unit cost difference between $0.10/inference and $0.0001/
 |---|---|
 | LinkedIn | [linkedin.com/in/nikunj-brahmbhatt-mba-384526221](https://www.linkedin.com/in/nikunj-brahmbhatt-mba-384526221) |
 | Email | nikunjmarketing1999@gmail.com |
-| Phone | +1 (608) 561-3815 |
-| 3-min demo Loom | _[paste your Loom URL here before pushing]_ |
+|
 
 ---
 
 **Built in 5 days. $35 in compute. Real model. Real eval. Real GTM thesis.**
 
-If you're hiring for AI Native AE / Forward Deployed PM / Solutions Architect roles at an inference platform — and the cost-quality frontier I've described above resonates with what you're seeing in the market — I'd love 15 minutes.
