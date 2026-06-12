@@ -1,7 +1,7 @@
 """Self-test rescore_v3 rubric on synthetic responses representing failure modes."""
 
-import sys
-sys.path.insert(0, "/home/claude")
+import sys, os
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from rescore_v3 import rescore_response
 
 print("=" * 72)

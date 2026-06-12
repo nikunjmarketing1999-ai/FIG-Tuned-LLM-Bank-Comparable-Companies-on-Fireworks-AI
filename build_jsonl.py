@@ -650,8 +650,8 @@ TEST_TICKERS = {"C", "HBAN", "WBS", "UMBF", "INDB"}
 def main():
     random.seed(42)  # reproducibility — same prompt cycling every run
 
-    train_path = Path("/home/claude/output/train.jsonl")
-    test_path = Path("/home/claude/output/test_prompts.jsonl")
+    train_path = Path("train.jsonl")
+    test_path = Path("test_prompts.jsonl")
     train_path.parent.mkdir(parents=True, exist_ok=True)
 
     train_count, test_count = 0, 0

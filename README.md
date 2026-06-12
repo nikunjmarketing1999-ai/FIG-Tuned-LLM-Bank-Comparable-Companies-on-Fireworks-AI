@@ -126,25 +126,28 @@ The rubric is implemented in `rescore_v3.py` and self-tested in `test_rescore.py
 
 ## Repository Structure
 
+All files live at the repo root — the scripts read and write from the working directory.
+
 ```
 .
 ├── README.md                          ← You are here
 │
-├── data/
-│   ├── train_v3.jsonl                 ← 37 hand-curated training examples
-│   └── test_prompts.jsonl             ← 5 held-out test banks
+├── build_jsonl.py                     ← Generates the train / test JSONL from structured bank records
+├── train_v3.jsonl                     ← Final hand-curated training set (37 examples)
+├── test_prompts.jsonl                 ← 5 held-out test banks (C, HBAN, WBS, UMBF, INDB)
 │
-├── scripts/
-│   ├── build_jsonl_v3.py              ← Generates training data from structured Python
-│   ├── eval_script_v2.py              ← Runs eval against Fireworks + GPT-5.5 + Claude 4.7
-│   ├── rescore_v3.py                  ← Applies FIG-analyst-grade rubric
-│   └── test_rescore.py                ← Self-tests rubric on synthetic cases
+├── eval_script_v2.py                  ← Runs the eval against Fireworks + GPT-5.5 + Claude Opus 4.7
+├── rescore_v3.py                      ← Applies the FIG-analyst-grade rubric (context-aware)
+├── test_rescore.py                    ← Self-tests the rubric on 4 synthetic cases (no API calls)
 │
-└── results/
-    ├── eval_results_v2.json           ← Raw eval output (15 inferences)
-    ├── eval_results_v2_rescored.json  ← After rubric v3 applied
-    └── eval_summary_v2_rescored.md    ← Human-readable summary
+├── eval_results.json                  ← Earlier-iteration raw eval output
+├── eval_results_v2.json               ← Raw eval output (15 inferences)
+├── eval_results_v2_rescored.json      ← After the rubric was applied
+├── eval_summary_v2.md                 ← Human-readable summary (pre-rescore)
+└── eval_summary_v2_rescored.md        ← Human-readable summary (post-rescore)
 ```
+
+> Note: `build_jsonl.py` emits the base training/test split from structured records; the shipped `train_v3.jsonl` is the final 37-example set used for the winning run.
 
 ---
 
@@ -309,7 +312,6 @@ Any vertical where the unit cost difference between $0.10/inference and $0.0001/
 |---|---|
 | LinkedIn | [linkedin.com/in/nikunj-brahmbhatt-mba-384526221](https://www.linkedin.com/in/nikunj-brahmbhatt-mba-384526221) |
 | Email | nikunjmarketing1999@gmail.com |
-|
 
 ---
 
