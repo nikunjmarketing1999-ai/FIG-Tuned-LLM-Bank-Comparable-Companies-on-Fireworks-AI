@@ -2,7 +2,7 @@
 
 > A 5-day vertical fine-tuning demonstration showing a Llama 3.1 8B model on Fireworks AI achieving **100% source-citation discipline** and **~1,100× cost reduction** vs. frontier APIs (GPT-5.5, Claude Opus 4.7) on bank comparable companies analysis — at production-realistic API settings.
 
-**Built by:** Nikunj Brahmbhatt — Investment Analyst, Piper Sandler
+**Built by:** Nikunj Brahmbhatt 
 
 **Built for:** Anyone exploring the cost-quality frontier of vertical fine-tuning on inference platforms — and the GTM thesis that follows from it.
 
